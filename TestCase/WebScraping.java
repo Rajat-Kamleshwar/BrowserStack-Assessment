@@ -1,5 +1,6 @@
 package TestCase;
 
+import Utils.DriverManagerUtil;
 import Utils.ImageSaveUtil;
 import Utils.RestAssuredUtil;
 import org.openqa.selenium.By;
@@ -18,19 +19,17 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.*;
 
-public class WebScraping {
+public class WebScraping extends DriverManagerUtil {
 
-    static WebDriver driver = null;
-    static WebDriverWait wait;
-    static Properties properties;
     static ImageSaveUtil imageSaveUtil;
     static RestAssuredUtil restAssuredUtil;
     static List<String> headersToTranslate;
     static List<String> translatedHeaders;
 
     public static void main(String[] args) {
+
         // Initialize Driver
-        driverInitialization("Chrome");
+        driver = driverInitialization("Chrome");
 
         // Invoke browser and navigate to website
         navigateToWebsite();
@@ -51,45 +50,10 @@ public class WebScraping {
         // Translate Headers into English language
         translateArticleHeaders();
 
+        // Analyse translated headers and print the repeated words from combined headers
+        analyseTranslatedHeaders();
+
         closeBrowser();
-    }
-
-    static void driverInitialization(String browserName){
-        String propertyDir = System.getProperty("user.dir") + File.separator + "Browser.properties";
-        try {
-            properties = new Properties();
-            properties.load(new FileInputStream(propertyDir));
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        String browser = properties.getProperty(browserName);
-        switch (browser){
-            case "Chrome":
-                System.setProperty("webdriver.chrome.driver",
-                        System.getProperty("user.dir") + File.separator + "Drivers" + File.separator + "chromedriver");
-
-                ChromeOptions options = new ChromeOptions();
-                options.addArguments("--disable-extensions");
-                options.addArguments("--disable-gpu");
-                options.addArguments("--remote-allow-origins=*");
-
-                driver = new ChromeDriver(options);
-                break;
-            case "Firefox":
-                System.setProperty("webdriver.gecko.driver",
-                        System.getProperty("user.dir") + File.separator + "Drivers" + File.separator + "geckodriver");
-                driver = new FirefoxDriver();
-                break;
-            case "Edge":
-                System.setProperty("webdriver.edge.driver",
-                        System.getProperty("user.dir") + File.separator + "Drivers" + File.separator + "msedgedriver");
-                driver = new EdgeDriver();
-                break;
-            default:
-                throw new IllegalArgumentException("Unsupported browser: " + browser);
-        }
-        System.out.println("WebDriver initialized for: " + browser);
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
     static void navigateToWebsite(){
@@ -187,7 +151,9 @@ public class WebScraping {
             System.out.println("\n************* Translated Headers: *************\n");
         for (String s : headersToTranslate){
             System.out.println("Spanish Header:\t" + s);
-            String translatedHeader = restAssuredUtil.translateApi(s).asString();
+
+            // Place a regex to handle special characters if any and only return words
+            String translatedHeader = restAssuredUtil.translateApi(s.replaceAll("[^a-zA-Z0-9\\s]", ""));
             System.out.println("English Header:\t" + translatedHeader);
             System.out.println("--------------------------------------------------------------------------------");
 
@@ -202,6 +168,37 @@ public class WebScraping {
             System.out.println(s);
             }
         }
+
+    static void analyseTranslatedHeaders(){
+        /*
+        Analyze Translated Headers:
+        From the translated headers, identify any words that are repeated more than twice across all headers combined.
+        Print each repeated word along with the count of its occurrences.
+        */
+
+        String headersCombinedText = " ";
+        for (String s : translatedHeaders){
+            headersCombinedText = headersCombinedText.concat(s.toLowerCase()).concat(" ");
+        }
+
+        System.out.println("Combined headers in a string:\t" + headersCombinedText);
+
+        // Split the string contents based on the spaces and compare each word and it's occurrence
+        Map<String, Integer> map = new HashMap<>();
+        int occurrence = 0;
+        String[] keywords = headersCombinedText.split(" ");
+
+        for (String word : keywords){
+            map.put(word, map.getOrDefault(word, occurrence) + 1);
+        }
+
+        // Iterate through values stored in map
+        for (Map.Entry<String, Integer> m : map.entrySet()){
+            if (m.getValue() > 1){
+                System.out.println("Repeated Word:\t" + m.getKey() + "\tOccurrence:\t" + m.getValue());
+            }
+        }
+    }
 
     static void closeBrowser(){
         driver.quit();

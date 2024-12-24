@@ -1,12 +1,21 @@
 package Utils;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.exc.StreamReadException;
+import com.fasterxml.jackson.databind.DatabindException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.jsonFormatVisitors.JsonArrayFormatVisitor;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonParser;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.http.ContentType;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -18,7 +27,7 @@ import static io.restassured.RestAssured.given;
 public class RestAssuredUtil {
     Properties properties;
 
-    public Response translateApi(String input){
+    public String translateApi(String input){
         try {
             properties = new Properties();
             properties.load(new FileInputStream(System.getProperty("user.dir") + File.separator +
@@ -47,7 +56,9 @@ public class RestAssuredUtil {
         String jsonBody = convertBodyToString(body);
 
         // Providing hardcoded status code 200 here, will be dynamic later
-        return fetchResponse(headers, jsonBody, baseUri, 200);
+        String response = fetchResponse(headers, jsonBody, baseUri, 200).asString();
+        JsonArray object = JsonParser.parseString(response).getAsJsonArray();
+        return object.get(0).getAsString();
     }
 
     public RequestSpecification requestBuilder(Map<String, String> headers, String body,
@@ -81,6 +92,16 @@ public class RestAssuredUtil {
         com.fasterxml.jackson.databind.ObjectMapper mapper = new com.fasterxml.jackson.databind.ObjectMapper();
         try {
             return mapper.writeValueAsString(body);
+        } catch (JsonProcessingException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public String extractStringFromJsonArray(String response) {
+        try {
+            ObjectMapper mapper = new ObjectMapper();
+            String[] stringArray = mapper.readValue(response, String[].class);
+            return stringArray[0];
         } catch (JsonProcessingException e) {
             throw new RuntimeException(e);
         }

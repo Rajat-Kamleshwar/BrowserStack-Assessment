@@ -17,5 +17,9 @@
     <orderEntry type="library" name="assertj.core1" level="project" />
     <orderEntry type="library" name="apache.directory.studio.commons.io" level="project" />
     <orderEntry type="library" name="fasterxml.jackson.core.databind" level="project" />
+    <orderEntry type="library" name="google.code.gson" level="project" />
+    <orderEntry type="library" name="rest-assured-5.5.0" level="project" />
+    <orderEntry type="library" name="gson-2.11.0" level="project" />
+    <orderEntry type="library" name="json" level="project" />
   </component>
 </module>
