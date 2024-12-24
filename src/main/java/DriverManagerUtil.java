@@ -58,7 +58,8 @@ public class DriverManagerUtil {
                 throw new IllegalArgumentException("Unsupported browser: " + browser);
         }
         System.out.println("WebDriver initialized for: " + browser);
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));  // Applicable throughout the execution
+        wait = new WebDriverWait(driver, Duration.ofSeconds(60));
         return driver;
     }
 }

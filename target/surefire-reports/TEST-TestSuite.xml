@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="55.661" tests="5" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="webdriver.chrome.driver" value="/Users/rajatkamleshwar/Documents/GitHub/BrowserStack-Assessment/Drivers/chromedriver"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/rajatkamleshwar/Documents/GitHub/BrowserStack-Assessment/target/test-classes:/Users/rajatkamleshwar/Documents/GitHub/BrowserStack-Assessment/target/classes:/Users/rajatkamleshwar/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/Users/rajatkamleshwar/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/rajatkamleshwar/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/rajatkamleshwar/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-java/4.27.0/selenium-java-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-api/4.27.0/selenium-api-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.27.0/selenium-chrome-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.27.0/selenium-chromium-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-json/4.27.0/selenium-json-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.27.0/selenium-manager-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v129/4.27.0/selenium-devtools-v129-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v130/4.27.0/selenium-devtools-v130-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v131/4.27.0/selenium-devtools-v131-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.27.0/selenium-devtools-v85-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.27.0/selenium-edge-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.27.0/selenium-firefox-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-http/4.27.0/selenium-http-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.27.0/selenium-ie-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.27.0/selenium-remote-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/com/google/guava/guava/33.3.1-jre/guava-33.3.1-jre.jar:/Users/rajatkamleshwar/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/Users/rajatkamleshwar/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/rajatkamleshwar/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/rajatkamleshwar/.m2/repository/org/checkerframework/checker-qual/3.43.0/checker-qual-3.43.0.jar:/Users/rajatkamleshwar/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.25.0-alpha/opentelemetry-semconv-1.25.0-alpha.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-api/1.44.1/opentelemetry-api-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-context/1.44.1/opentelemetry-context-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.44.1/opentelemetry-exporter-logging-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.44.1/opentelemetry-sdk-common-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.44.1/opentelemetry-sdk-extension-autoconfigure-spi-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.44.1/opentelemetry-sdk-extension-autoconfigure-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-api-incubator/1.44.1-alpha/opentelemetry-api-incubator-1.44.1-alpha.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.44.1/opentelemetry-sdk-trace-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.44.1/opentelemetry-sdk-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.44.1/opentelemetry-sdk-metrics-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.44.1/opentelemetry-sdk-logs-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/net/bytebuddy/byte-buddy/1.15.10/byte-buddy-1.15.10.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-os/4.27.0/selenium-os-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/commons/commons-exec/1.4.0/commons-exec-1.4.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.27.0/selenium-safari-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-support/4.27.0/selenium-support-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/io/rest-assured/rest-assured/5.5.0/rest-assured-5.5.0.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/groovy/groovy/4.0.22/groovy-4.0.22.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/groovy/groovy-xml/4.0.22/groovy-xml-4.0.22.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/rajatkamleshwar/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/rajatkamleshwar/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/rajatkamleshwar/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/rajatkamleshwar/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/rajatkamleshwar/.m2/repository/io/rest-assured/json-path/5.5.0/json-path-5.5.0.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/groovy/groovy-json/4.0.22/groovy-json-4.0.22.jar:/Users/rajatkamleshwar/.m2/repository/io/rest-assured/rest-assured-common/5.5.0/rest-assured-common-5.5.0.jar:/Users/rajatkamleshwar/.m2/repository/io/rest-assured/xml-path/5.5.0/xml-path-5.5.0.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/rajatkamleshwar/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.18.2/jackson-databind-2.18.2.jar:/Users/rajatkamleshwar/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.18.2/jackson-annotations-2.18.2.jar:/Users/rajatkamleshwar/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.18.2/jackson-core-2.18.2.jar:/Users/rajatkamleshwar/.m2/repository/com/google/code/gson/gson/2.11.0/gson-2.11.0.jar:/Users/rajatkamleshwar/.m2/repository/com/google/errorprone/error_prone_annotations/2.27.0/error_prone_annotations-2.27.0.jar:/Users/rajatkamleshwar/.m2/repository/com/browserstack/browserstack-local-java/1.1.4/browserstack-local-java-1.1.4.jar:/Users/rajatkamleshwar/.m2/repository/commons-io/commons-io/2.16.1/commons-io-2.16.1.jar:/Users/rajatkamleshwar/.m2/repository/org/json/json/20231013/json-20231013.jar:/Users/rajatkamleshwar/.m2/repository/com/browserstack/browserstack-java-sdk/1.29.0/browserstack-java-sdk-1.29.0.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="OBSERVABILITY_BUILD_HASHED_ID" value="h2sujjeu9bbexrg61ao3qrmnpvg0gsetdgiitczt"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/lib"/>
+    <property name="OBSERVABILITY_ALLOW_SCREENSHOTS" value="true"/>
+    <property name="BROWSERSTACK_TESTHUB_JWT" value="eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJicm93c2Vyc3RhY2tfb2IiLCJzdWIiOiI5MjQ1MTgxIiwiZ3JvdXBfaWQiOjkxNTYxMDksInVzZXJfaWQiOjkyNDUxODEsImJ1aWxkX2hhc2hlZF9pZCI6Imgyc3VqamV1OWJiZXhyZzYxYW8zcXJtbnB2ZzBnc2V0ZGdpaXRjenQiLCJwcm9qZWN0X25hbWUiOiJCcm93c2VyU3RhY2sgU2FtcGxlIiwiaG9va19hc190ZXN0IjoiMSIsImJ1aWxkX25hbWUiOiJicm93c2Vyc3RhY2stYnVpbGQiLCJwcm9kdWN0X21hcCI6IntcIm9ic2VydmFiaWxpdHlcIjp0cnVlLFwiYXV0b21hdGVcIjp0cnVlLFwib3JpZ2luRnJvbVByb2R1Y3RNYXBcIjpcIkF1dG9tYXRlXCIsXCJic3RhY2tBdXRvbWF0aW9uXCI6dHJ1ZSxcInByb2R1Y3RGaWx0ZXJTb3VyY2VcIjp0cnVlLFwiY2FkXCI6dHJ1ZX0iLCJncnJfcmVnaW9uIjoiIiwic2lnbmluZ19rZXlfaGFzaCI6IjdkZjZlNjgzYzY3MDkxYjZiY2FiNDk1ZTNmN2YyYWExNjljNzVmMzFmYmFmYTUwZjQ3MDI0YzgxYjllNzA1M2QiLCJpYXQiOjE3MzUwNDMwNzcsImV4cCI6MTczNTM4ODY3N30.he7EfBi4-l9YTfMGsH4sozDuPziE-oLo7aL5ZbaQ2Ts"/>
+    <property name="sun.java.command" value="/Users/rajatkamleshwar/Documents/GitHub/BrowserStack-Assessment/target/surefire/surefirebooter-20241224175432781_3.jar /Users/rajatkamleshwar/Documents/GitHub/BrowserStack-Assessment/target/surefire 2024-12-24T17-54-32_738-jvmRun1 surefire-20241224175432781_1tmp surefire_0-20241224175432781_2tmp"/>
+    <property name="http.nonProxyHosts" value="dns.google|*.dns.google|one.one.one.one|*.one.one.one.one|beacons.gvt2.com|*.beacons.gvt2.com|beacons2.gvt2.com|*.beacons2.gvt2.com|ocsp.digicert.com|*.ocsp.digicert.com"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/rajatkamleshwar/Documents/GitHub/BrowserStack-Assessment/target/test-classes:/Users/rajatkamleshwar/Documents/GitHub/BrowserStack-Assessment/target/classes:/Users/rajatkamleshwar/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/Users/rajatkamleshwar/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/rajatkamleshwar/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/rajatkamleshwar/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-java/4.27.0/selenium-java-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-api/4.27.0/selenium-api-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.27.0/selenium-chrome-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.27.0/selenium-chromium-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-json/4.27.0/selenium-json-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.27.0/selenium-manager-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v129/4.27.0/selenium-devtools-v129-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v130/4.27.0/selenium-devtools-v130-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v131/4.27.0/selenium-devtools-v131-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.27.0/selenium-devtools-v85-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.27.0/selenium-edge-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.27.0/selenium-firefox-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-http/4.27.0/selenium-http-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.27.0/selenium-ie-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.27.0/selenium-remote-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/com/google/guava/guava/33.3.1-jre/guava-33.3.1-jre.jar:/Users/rajatkamleshwar/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/Users/rajatkamleshwar/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/rajatkamleshwar/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/rajatkamleshwar/.m2/repository/org/checkerframework/checker-qual/3.43.0/checker-qual-3.43.0.jar:/Users/rajatkamleshwar/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.25.0-alpha/opentelemetry-semconv-1.25.0-alpha.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-api/1.44.1/opentelemetry-api-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-context/1.44.1/opentelemetry-context-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.44.1/opentelemetry-exporter-logging-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.44.1/opentelemetry-sdk-common-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.44.1/opentelemetry-sdk-extension-autoconfigure-spi-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.44.1/opentelemetry-sdk-extension-autoconfigure-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-api-incubator/1.44.1-alpha/opentelemetry-api-incubator-1.44.1-alpha.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.44.1/opentelemetry-sdk-trace-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.44.1/opentelemetry-sdk-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.44.1/opentelemetry-sdk-metrics-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.44.1/opentelemetry-sdk-logs-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/net/bytebuddy/byte-buddy/1.15.10/byte-buddy-1.15.10.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-os/4.27.0/selenium-os-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/commons/commons-exec/1.4.0/commons-exec-1.4.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.27.0/selenium-safari-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-support/4.27.0/selenium-support-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/io/rest-assured/rest-assured/5.5.0/rest-assured-5.5.0.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/groovy/groovy/4.0.22/groovy-4.0.22.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/groovy/groovy-xml/4.0.22/groovy-xml-4.0.22.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/rajatkamleshwar/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/rajatkamleshwar/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/rajatkamleshwar/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/rajatkamleshwar/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/rajatkamleshwar/.m2/repository/io/rest-assured/json-path/5.5.0/json-path-5.5.0.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/groovy/groovy-json/4.0.22/groovy-json-4.0.22.jar:/Users/rajatkamleshwar/.m2/repository/io/rest-assured/rest-assured-common/5.5.0/rest-assured-common-5.5.0.jar:/Users/rajatkamleshwar/.m2/repository/io/rest-assured/xml-path/5.5.0/xml-path-5.5.0.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/rajatkamleshwar/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.18.2/jackson-databind-2.18.2.jar:/Users/rajatkamleshwar/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.18.2/jackson-annotations-2.18.2.jar:/Users/rajatkamleshwar/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.18.2/jackson-core-2.18.2.jar:/Users/rajatkamleshwar/.m2/repository/com/google/code/gson/gson/2.11.0/gson-2.11.0.jar:/Users/rajatkamleshwar/.m2/repository/com/google/errorprone/error_prone_annotations/2.27.0/error_prone_annotations-2.27.0.jar:/Users/rajatkamleshwar/.m2/repository/com/browserstack/browserstack-local-java/1.1.4/browserstack-local-java-1.1.4.jar:/Users/rajatkamleshwar/.m2/repository/commons-io/commons-io/2.16.1/commons-io-2.16.1.jar:/Users/rajatkamleshwar/.m2/repository/org/json/json/20231013/json-20231013.jar:/Users/rajatkamleshwar/.m2/repository/com/browserstack/browserstack-java-sdk/1.29.0/browserstack-java-sdk-1.29.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/rajatkamleshwar"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-10-17"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/rajatkamleshwar/Documents/GitHub/BrowserStack-Assessment"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="/Users/rajatkamleshwar/Documents/GitHub/BrowserStack-Assessment/target/surefire/surefirebooter-20241224175432781_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="dns.google|*.dns.google|one.one.one.one|*.one.one.one.one|beacons.gvt2.com|*.beacons.gvt2.com|beacons2.gvt2.com|*.beacons2.gvt2.com|ocsp.digicert.com|*.ocsp.digicert.com"/>
+    <property name="java.runtime.version" value="17.0.9+11-LTS-201"/>
+    <property name="user.name" value="rajatkamleshwar"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/rajatkamleshwar/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/by/5v7xcfls19x78gwlstzrmqzm0000gp/T/"/>
+    <property name="BROWSERSTACK_TESTHUB_UUID" value="h2sujjeu9bbexrg61ao3qrmnpvg0gsetdgiitczt"/>
+    <property name="java.version" value="17.0.9"/>
+    <property name="user.dir" value="/Users/rajatkamleshwar/Documents/GitHub/BrowserStack-Assessment"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="setup@0" value="0"/>
+    <property name="java.library.path" value="/Users/rajatkamleshwar/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.9+11-LTS-201"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="dns.google|*.dns.google|one.one.one.one|*.one.one.one.one|beacons.gvt2.com|*.beacons.gvt2.com|beacons2.gvt2.com|*.beacons2.gvt2.com|ocsp.digicert.com|*.ocsp.digicert.com"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="navigateToWebsite" classname="WebScrapingTest" time="1.22">
+    <system-out><![CDATA[WebDriver initialized for: Chrome
+Navigated to: https://elpais.com/
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Dec 24, 2024 5:54:50 PM org.openqa.selenium.devtools.CdpEndpointFinder getCdpEndPoint
+WARNING: Unable to connect to determine websocket url: java.net.ConnectException
+]]></system-err>
+  </testcase>
+  <testcase name="verifyLanguage" classname="WebScrapingTest" time="2.352">
+    <system-out><![CDATA[Default language is Spanish
+]]></system-out>
+  </testcase>
+  <testcase name="scrapeArticles" classname="WebScrapingTest" time="30.348">
+    <system-out><![CDATA[Articles scraped from Opinion section!:
+
+Image Folder cleared successfully!
+Article Headline:	El año de Sánchez
+Article Content:	La buena marcha de la Economía compite en España con el ruido político generado por la oposición desde el comienzo de la legislatura
+
+Image URL:	https://imagenes.elpais.com/resizer/v2/7PKQQGMAVRHAHKRIJH32ETR5LE.jpg?auth=55935e9bee3201f4b39f0e9f1df4ab123da538651105a26a69b2ff93960a333c&width=414
+
+---------------Image Saved Successfully!---------------
+
+Image URL:	https://imagenes.elpais.com/resizer/v2/MENB7YWVLREHXBY4LBVNWZIIR4.jpg?auth=ac099e45937dabab4a74335d0aff09395f789fb53fed71c0b876f0ca8f8fc872&width=414&height=233&smart=true
+
+---------------Image Saved Successfully!---------------
+
+Image URL:	https://imagenes.elpais.com/resizer/v2/2LYJPTKARND55DJM4GRYMAKRTA.jpeg?auth=e47d4c0d6c7cbace8aaa134da3c6af7c708750e095e1cfb774d109ecf3bc49c6&width=414&height=233&smart=true
+
+---------------Image Saved Successfully!---------------
+
+*********************************************************
+
+Article Headline:	La descarbonización se frena
+Article Content:	El desproporcionado consumo de petróleo en el transporte es un lastre para los objetivos climáticos de España
+
+Image URL:	https://imagenes.elpais.com/resizer/v2/7PKQQGMAVRHAHKRIJH32ETR5LE.jpg?auth=55935e9bee3201f4b39f0e9f1df4ab123da538651105a26a69b2ff93960a333c&width=414
+
+---------------Image Saved Successfully!---------------
+
+Image URL:	https://imagenes.elpais.com/resizer/v2/MENB7YWVLREHXBY4LBVNWZIIR4.jpg?auth=ac099e45937dabab4a74335d0aff09395f789fb53fed71c0b876f0ca8f8fc872&width=414&height=233&smart=true
+
+---------------Image Saved Successfully!---------------
+
+Image URL:	https://imagenes.elpais.com/resizer/v2/2LYJPTKARND55DJM4GRYMAKRTA.jpeg?auth=e47d4c0d6c7cbace8aaa134da3c6af7c708750e095e1cfb774d109ecf3bc49c6&width=414&height=233&smart=true
+
+---------------Image Saved Successfully!---------------
+
+*********************************************************
+
+Article Headline:	Niebla en la noche
+Article Content:	Pensé que las redes sociales serían la solución contra la soledad no deseada. Me equivoqué
+
+Image URL:	https://imagenes.elpais.com/resizer/v2/7PKQQGMAVRHAHKRIJH32ETR5LE.jpg?auth=55935e9bee3201f4b39f0e9f1df4ab123da538651105a26a69b2ff93960a333c&width=414
+
+---------------Image Saved Successfully!---------------
+
+Image URL:	https://imagenes.elpais.com/resizer/v2/MENB7YWVLREHXBY4LBVNWZIIR4.jpg?auth=ac099e45937dabab4a74335d0aff09395f789fb53fed71c0b876f0ca8f8fc872&width=414&height=233&smart=true
+
+---------------Image Saved Successfully!---------------
+
+Image URL:	https://imagenes.elpais.com/resizer/v2/2LYJPTKARND55DJM4GRYMAKRTA.jpeg?auth=e47d4c0d6c7cbace8aaa134da3c6af7c708750e095e1cfb774d109ecf3bc49c6&width=414&height=233&smart=true
+
+---------------Image Saved Successfully!---------------
+
+*********************************************************
+
+Article Headline:	El barro y mamá: un cuento de Navidad tras la dana
+Article Content:	La memoria crece en los detalles. Aquel fuerte de juguete. El agua creciendo. Las calles anegadas. Los coches amontonados. El cuerpo de la modista de Catarroja flotando en su habitación
+
+Image URL:	https://imagenes.elpais.com/resizer/v2/7PKQQGMAVRHAHKRIJH32ETR5LE.jpg?auth=55935e9bee3201f4b39f0e9f1df4ab123da538651105a26a69b2ff93960a333c&width=414
+
+---------------Image Saved Successfully!---------------
+
+Image URL:	https://imagenes.elpais.com/resizer/v2/MENB7YWVLREHXBY4LBVNWZIIR4.jpg?auth=ac099e45937dabab4a74335d0aff09395f789fb53fed71c0b876f0ca8f8fc872&width=414&height=233&smart=true
+
+---------------Image Saved Successfully!---------------
+
+Image URL:	https://imagenes.elpais.com/resizer/v2/2LYJPTKARND55DJM4GRYMAKRTA.jpeg?auth=e47d4c0d6c7cbace8aaa134da3c6af7c708750e095e1cfb774d109ecf3bc49c6&width=414&height=233&smart=true
+
+---------------Image Saved Successfully!---------------
+
+*********************************************************
+
+Article Headline:	‘Las tres fronteras’
+Article Content:	Este proyecto fotográfico documenta los límites entre Malí, Níger y Burkina Faso, epicentro del conflicto que devasta el Sahel
+
+Image URL:	https://imagenes.elpais.com/resizer/v2/7PKQQGMAVRHAHKRIJH32ETR5LE.jpg?auth=55935e9bee3201f4b39f0e9f1df4ab123da538651105a26a69b2ff93960a333c&width=414
+
+---------------Image Saved Successfully!---------------
+
+Image URL:	https://imagenes.elpais.com/resizer/v2/MENB7YWVLREHXBY4LBVNWZIIR4.jpg?auth=ac099e45937dabab4a74335d0aff09395f789fb53fed71c0b876f0ca8f8fc872&width=414&height=233&smart=true
+
+---------------Image Saved Successfully!---------------
+
+Image URL:	https://imagenes.elpais.com/resizer/v2/2LYJPTKARND55DJM4GRYMAKRTA.jpeg?auth=e47d4c0d6c7cbace8aaa134da3c6af7c708750e095e1cfb774d109ecf3bc49c6&width=414&height=233&smart=true
+
+---------------Image Saved Successfully!---------------
+
+*********************************************************
+
+]]></system-out>
+  </testcase>
+  <testcase name="translateArticleHeaders" classname="WebScrapingTest" time="3.023">
+    <system-out><![CDATA[
+************* Translated Headers: *************
+
+Spanish Header:	El año de Sánchez
+Request method:	POST
+Request URI:	https://ultra-fast-translation.p.rapidapi.com/t
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-RapidAPI-Host=ultra-fast-translation.p.rapidapi.com
+				X-RapidAPI-Key=c2432b444dmsh909f603234f0c69p1a0e09jsne64b3c285be3
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "q": "El ao de Snchez",
+    "e": "",
+    "from": "es",
+    "to": "en"
+}
+HTTP/1.1 200 OK
+Date: Tue, 24 Dec 2024 12:25:35 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Content-Encoding: gzip
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Cross-Origin-Resource-Policy: cross-origin
+Pragma: no-cache
+Accept-CH: Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Cross-Origin-Opener-Policy: same-origin
+Permissions-Policy: ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*
+Access-Control-Allow-Origin: *
+Content-Security-Policy: script-src 'report-sample' 'nonce-KPCxHXas69iYMCKbdCZ55g' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/TranslateApiHttp/cspreport;worker-src 'self'
+Content-Security-Policy: require-trusted-types-for 'script';report-uri /_/TranslateApiHttp/cspreport
+X-XSS-Protection: 0
+reporting-endpoints: default="/_/TranslateApiHttp/web-reports?context=eJzjktDikmII1pBicEqfwRoCxH9krrJ6911lFeLh2H9h1W42gQ_Lfh9hVFJKyi-MLylKzCvOSSxJLU4tKkstijcyMDIxNDI00zOwiC8wAAC3dhmf"
+Content-Disposition: attachment; filename="json.txt"; filename*=UTF-8''json.txt
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-RateLimit-rapid-free-plans-hard-limit-Limit: 500000
+X-RateLimit-rapid-free-plans-hard-limit-Remaining: 499861
+X-RateLimit-rapid-free-plans-hard-limit-Reset: 1916985
+Server: RapidAPI-1.2.8
+X-RapidAPI-Version: 1.2.8
+X-RapidAPI-Region: AWS - ap-southeast-1
+X-RapidAPI-Request-Id: 0bfd8cfe1ecc9ec23413e7b73ff707f66526fc90e8257b670482f04093c6205b
+
+[
+    "The year of Sánchez"
+]
+English Header:	The year of Sánchez
+--------------------------------------------------------------------------------
+Spanish Header:	La descarbonización se frena
+Request method:	POST
+Request URI:	https://ultra-fast-translation.p.rapidapi.com/t
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-RapidAPI-Host=ultra-fast-translation.p.rapidapi.com
+				X-RapidAPI-Key=c2432b444dmsh909f603234f0c69p1a0e09jsne64b3c285be3
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "q": "La descarbonizacin se frena",
+    "e": "",
+    "from": "es",
+    "to": "en"
+}
+HTTP/1.1 200 OK
+Date: Tue, 24 Dec 2024 12:25:35 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Encoding: gzip
+Cross-Origin-Resource-Policy: cross-origin
+Pragma: no-cache
+Accept-CH: Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Cross-Origin-Opener-Policy: same-origin
+Permissions-Policy: ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*
+Access-Control-Allow-Origin: *
+X-XSS-Protection: 0
+reporting-endpoints: default="/_/TranslateApiHttp/web-reports?context=eJzjktDikmJw0JBicEqfwRoCxH9krrJ6911lFeLh2H9h1W42gRdTn25lVlJKyi-MLylKzCvOSSxJLU4tKkstijcyMDIxNDI00zOwiC8wAACpChlQ"
+Content-Security-Policy: script-src 'report-sample' 'nonce-wOuuV1FEV_1pCS7TTjawEg' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/TranslateApiHttp/cspreport;worker-src 'self'
+Content-Security-Policy: require-trusted-types-for 'script';report-uri /_/TranslateApiHttp/cspreport
+Content-Disposition: attachment; filename="json.txt"; filename*=UTF-8''json.txt
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-RateLimit-rapid-free-plans-hard-limit-Limit: 500000
+X-RateLimit-rapid-free-plans-hard-limit-Remaining: 499860
+X-RateLimit-rapid-free-plans-hard-limit-Reset: 1916985
+Server: RapidAPI-1.2.8
+X-RapidAPI-Version: 1.2.8
+X-RapidAPI-Region: AWS - ap-southeast-1
+X-RapidAPI-Request-Id: 3bd3454782dd1e85bc38e434ebc7e345d4be429f94ae7d43558e657f3842b8e4
+
+[
+    "Decarbonization slows down"
+]
+English Header:	Decarbonization slows down
+--------------------------------------------------------------------------------
+Spanish Header:	Niebla en la noche
+Request method:	POST
+Request URI:	https://ultra-fast-translation.p.rapidapi.com/t
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-RapidAPI-Host=ultra-fast-translation.p.rapidapi.com
+				X-RapidAPI-Key=c2432b444dmsh909f603234f0c69p1a0e09jsne64b3c285be3
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "q": "Niebla en la noche",
+    "e": "",
+    "from": "es",
+    "to": "en"
+}
+HTTP/1.1 200 OK
+Date: Tue, 24 Dec 2024 12:25:36 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Encoding: gzip
+Cross-Origin-Resource-Policy: cross-origin
+Pragma: no-cache
+Accept-CH: Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Cross-Origin-Opener-Policy: same-origin
+Permissions-Policy: ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*
+Access-Control-Allow-Origin: *
+X-XSS-Protection: 0
+reporting-endpoints: default="/_/TranslateApiHttp/web-reports?context=eJzjktDikmJw0JBicEqfwRoCxH9krrJ6911lFeLhOHBh1W42gQX3p21hVFJKyi-MLylKzCvOSSxJLU4tKkstijcyMDIxNDI00zOwiC8wAACcyBkB"
+Content-Security-Policy: script-src 'report-sample' 'nonce-LAh2VLFgA07acrWiwN0KIw' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/TranslateApiHttp/cspreport;worker-src 'self'
+Content-Security-Policy: require-trusted-types-for 'script';report-uri /_/TranslateApiHttp/cspreport
+Content-Disposition: attachment; filename="json.txt"; filename*=UTF-8''json.txt
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-RateLimit-rapid-free-plans-hard-limit-Limit: 500000
+X-RateLimit-rapid-free-plans-hard-limit-Remaining: 499859
+X-RateLimit-rapid-free-plans-hard-limit-Reset: 1916984
+Server: RapidAPI-1.2.8
+X-RapidAPI-Version: 1.2.8
+X-RapidAPI-Region: AWS - ap-southeast-1
+X-RapidAPI-Request-Id: ba0c98b976869f98cba3df604eee33aa06199c70117aef62e1f228234e9a5be2
+
+[
+    "Fog at night"
+]
+English Header:	Fog at night
+--------------------------------------------------------------------------------
+Spanish Header:	El barro y mamá: un cuento de Navidad tras la dana
+Request method:	POST
+Request URI:	https://ultra-fast-translation.p.rapidapi.com/t
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-RapidAPI-Host=ultra-fast-translation.p.rapidapi.com
+				X-RapidAPI-Key=c2432b444dmsh909f603234f0c69p1a0e09jsne64b3c285be3
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "q": "El barro y mam un cuento de Navidad tras la dana",
+    "e": "",
+    "from": "es",
+    "to": "en"
+}
+HTTP/1.1 200 OK
+Date: Tue, 24 Dec 2024 12:25:36 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Encoding: gzip
+Cross-Origin-Resource-Policy: cross-origin
+Pragma: no-cache
+Accept-CH: Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Cross-Origin-Opener-Policy: same-origin
+Permissions-Policy: ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*
+Access-Control-Allow-Origin: *
+X-XSS-Protection: 0
+reporting-endpoints: default="/_/TranslateApiHttp/web-reports?context=eJzjktDikmLw15BicEqfwRoCxH9krrJ6911lFeLhOHBh1W42gRPH9_czKykl5RfGlxQl5hXnJJakFqcWlaUWxRsZGJkYGhma6RlYxBcYAACklRkm"
+Content-Security-Policy: require-trusted-types-for 'script';report-uri /_/TranslateApiHttp/cspreport
+Content-Security-Policy: script-src 'report-sample' 'nonce-Lqz7s3wg0bWGeXTKNBioUw' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/TranslateApiHttp/cspreport;worker-src 'self'
+Content-Disposition: attachment; filename="json.txt"; filename*=UTF-8''json.txt
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-RateLimit-rapid-free-plans-hard-limit-Limit: 500000
+X-RateLimit-rapid-free-plans-hard-limit-Remaining: 499858
+X-RateLimit-rapid-free-plans-hard-limit-Reset: 1916984
+Server: RapidAPI-1.2.8
+X-RapidAPI-Version: 1.2.8
+X-RapidAPI-Region: AWS - ap-southeast-1
+X-RapidAPI-Request-Id: 723fe1e44c37bdfbfec93f3bfd5d1c20362bb4e00852213917baeeca219e3942
+
+[
+    "The mud and mom a Christmas story after the dana"
+]
+English Header:	The mud and mom a Christmas story after the dana
+--------------------------------------------------------------------------------
+Spanish Header:	‘Las tres fronteras’
+Request method:	POST
+Request URI:	https://ultra-fast-translation.p.rapidapi.com/t
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-RapidAPI-Host=ultra-fast-translation.p.rapidapi.com
+				X-RapidAPI-Key=c2432b444dmsh909f603234f0c69p1a0e09jsne64b3c285be3
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "q": "Las tres fronteras",
+    "e": "",
+    "from": "es",
+    "to": "en"
+}
+HTTP/1.1 200 OK
+Date: Tue, 24 Dec 2024 12:25:37 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Content-Encoding: gzip
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Cross-Origin-Resource-Policy: cross-origin
+Pragma: no-cache
+Accept-CH: Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Cross-Origin-Opener-Policy: same-origin
+Content-Security-Policy: script-src 'report-sample' 'nonce-bzv3fJfNCfubs6TN64EvZg' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/TranslateApiHttp/cspreport;worker-src 'self'
+Content-Security-Policy: require-trusted-types-for 'script';report-uri /_/TranslateApiHttp/cspreport
+Access-Control-Allow-Origin: *
+Permissions-Policy: ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*
+X-XSS-Protection: 0
+reporting-endpoints: default="/_/TranslateApiHttp/web-reports?context=eJzjktDikmLw1pBicEqfwRoCxH9krrJ6911lFeLhOHhh1W42gRfzr7czKikl5RfGlxQl5hXnJJakFqcWlaUWxRsZGJkYGhma6RlYxBcYAACkuhkp"
+Content-Disposition: attachment; filename="json.txt"; filename*=UTF-8''json.txt
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-RateLimit-rapid-free-plans-hard-limit-Limit: 500000
+X-RateLimit-rapid-free-plans-hard-limit-Remaining: 499857
+X-RateLimit-rapid-free-plans-hard-limit-Reset: 1916983
+Server: RapidAPI-1.2.8
+X-RapidAPI-Version: 1.2.8
+X-RapidAPI-Region: AWS - ap-southeast-1
+X-RapidAPI-Request-Id: 7942b469f1d3edff3545d94d58fe8cf215ae640141892b04ea2a99236e4a1ab4
+
+[
+    "The three borders"
+]
+English Header:	The three borders
+--------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="analyseTranslatedHeaders" classname="WebScrapingTest" time="0.115">
+    <system-out><![CDATA[Combined headers in a string:	 the year of sánchez decarbonization slows down fog at night the mud and mom a christmas story after the dana the three borders 
+Repeated Word:	the	Occurrence:	4
+]]></system-out>
+  </testcase>
+</testsuite>

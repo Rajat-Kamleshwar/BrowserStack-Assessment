@@ -4,7 +4,7 @@ platforms:
   - os: Windows
     osVersion: 10
     browserName: Chrome
-    browserVersion: 120.0
+    browserVersion: 131.0
   - os: OS X
     osVersion: Monterey
     browserName: Safari
