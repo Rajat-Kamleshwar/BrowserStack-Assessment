@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="55.661" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="139.614" tests="32" errors="0" skipped="15" failures="4">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="webdriver.chrome.driver" value="/Users/rajatkamleshwar/Documents/GitHub/BrowserStack-Assessment/Drivers/chromedriver"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/Users/rajatkamleshwar/Documents/GitHub/BrowserStack-Assessment/target/test-classes:/Users/rajatkamleshwar/Documents/GitHub/BrowserStack-Assessment/target/classes:/Users/rajatkamleshwar/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/Users/rajatkamleshwar/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/rajatkamleshwar/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/rajatkamleshwar/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-java/4.27.0/selenium-java-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-api/4.27.0/selenium-api-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.27.0/selenium-chrome-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.27.0/selenium-chromium-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-json/4.27.0/selenium-json-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.27.0/selenium-manager-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v129/4.27.0/selenium-devtools-v129-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v130/4.27.0/selenium-devtools-v130-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v131/4.27.0/selenium-devtools-v131-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.27.0/selenium-devtools-v85-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.27.0/selenium-edge-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.27.0/selenium-firefox-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-http/4.27.0/selenium-http-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.27.0/selenium-ie-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.27.0/selenium-remote-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/com/google/guava/guava/33.3.1-jre/guava-33.3.1-jre.jar:/Users/rajatkamleshwar/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/Users/rajatkamleshwar/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/rajatkamleshwar/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/rajatkamleshwar/.m2/repository/org/checkerframework/checker-qual/3.43.0/checker-qual-3.43.0.jar:/Users/rajatkamleshwar/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.25.0-alpha/opentelemetry-semconv-1.25.0-alpha.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-api/1.44.1/opentelemetry-api-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-context/1.44.1/opentelemetry-context-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.44.1/opentelemetry-exporter-logging-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.44.1/opentelemetry-sdk-common-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.44.1/opentelemetry-sdk-extension-autoconfigure-spi-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.44.1/opentelemetry-sdk-extension-autoconfigure-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-api-incubator/1.44.1-alpha/opentelemetry-api-incubator-1.44.1-alpha.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.44.1/opentelemetry-sdk-trace-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.44.1/opentelemetry-sdk-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.44.1/opentelemetry-sdk-metrics-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.44.1/opentelemetry-sdk-logs-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/net/bytebuddy/byte-buddy/1.15.10/byte-buddy-1.15.10.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-os/4.27.0/selenium-os-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/commons/commons-exec/1.4.0/commons-exec-1.4.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.27.0/selenium-safari-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-support/4.27.0/selenium-support-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/io/rest-assured/rest-assured/5.5.0/rest-assured-5.5.0.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/groovy/groovy/4.0.22/groovy-4.0.22.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/groovy/groovy-xml/4.0.22/groovy-xml-4.0.22.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/rajatkamleshwar/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/rajatkamleshwar/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/rajatkamleshwar/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/rajatkamleshwar/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/rajatkamleshwar/.m2/repository/io/rest-assured/json-path/5.5.0/json-path-5.5.0.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/groovy/groovy-json/4.0.22/groovy-json-4.0.22.jar:/Users/rajatkamleshwar/.m2/repository/io/rest-assured/rest-assured-common/5.5.0/rest-assured-common-5.5.0.jar:/Users/rajatkamleshwar/.m2/repository/io/rest-assured/xml-path/5.5.0/xml-path-5.5.0.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/rajatkamleshwar/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.18.2/jackson-databind-2.18.2.jar:/Users/rajatkamleshwar/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.18.2/jackson-annotations-2.18.2.jar:/Users/rajatkamleshwar/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.18.2/jackson-core-2.18.2.jar:/Users/rajatkamleshwar/.m2/repository/com/google/code/gson/gson/2.11.0/gson-2.11.0.jar:/Users/rajatkamleshwar/.m2/repository/com/google/errorprone/error_prone_annotations/2.27.0/error_prone_annotations-2.27.0.jar:/Users/rajatkamleshwar/.m2/repository/com/browserstack/browserstack-local-java/1.1.4/browserstack-local-java-1.1.4.jar:/Users/rajatkamleshwar/.m2/repository/commons-io/commons-io/2.16.1/commons-io-2.16.1.jar:/Users/rajatkamleshwar/.m2/repository/org/json/json/20231013/json-20231013.jar:/Users/rajatkamleshwar/.m2/repository/com/browserstack/browserstack-java-sdk/1.29.0/browserstack-java-sdk-1.29.0.jar:"/>
+    <property name="java.class.path" value="/Users/rajatkamleshwar/Documents/GitHub/BrowserStack-Assessment/target/test-classes:/Users/rajatkamleshwar/Documents/GitHub/BrowserStack-Assessment/target/classes:/Users/rajatkamleshwar/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/Users/rajatkamleshwar/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/rajatkamleshwar/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/rajatkamleshwar/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-java/4.27.0/selenium-java-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-api/4.27.0/selenium-api-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.27.0/selenium-chrome-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.27.0/selenium-chromium-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-json/4.27.0/selenium-json-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.27.0/selenium-manager-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v129/4.27.0/selenium-devtools-v129-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v130/4.27.0/selenium-devtools-v130-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v131/4.27.0/selenium-devtools-v131-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.27.0/selenium-devtools-v85-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.27.0/selenium-edge-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.27.0/selenium-firefox-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-http/4.27.0/selenium-http-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.27.0/selenium-ie-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.27.0/selenium-remote-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/com/google/guava/guava/33.3.1-jre/guava-33.3.1-jre.jar:/Users/rajatkamleshwar/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/Users/rajatkamleshwar/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/rajatkamleshwar/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/rajatkamleshwar/.m2/repository/org/checkerframework/checker-qual/3.43.0/checker-qual-3.43.0.jar:/Users/rajatkamleshwar/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.25.0-alpha/opentelemetry-semconv-1.25.0-alpha.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-api/1.44.1/opentelemetry-api-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-context/1.44.1/opentelemetry-context-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.44.1/opentelemetry-exporter-logging-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.44.1/opentelemetry-sdk-common-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.44.1/opentelemetry-sdk-extension-autoconfigure-spi-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.44.1/opentelemetry-sdk-extension-autoconfigure-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-api-incubator/1.44.1-alpha/opentelemetry-api-incubator-1.44.1-alpha.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.44.1/opentelemetry-sdk-trace-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.44.1/opentelemetry-sdk-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.44.1/opentelemetry-sdk-metrics-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.44.1/opentelemetry-sdk-logs-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/net/bytebuddy/byte-buddy/1.15.10/byte-buddy-1.15.10.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-os/4.27.0/selenium-os-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/commons/commons-exec/1.4.0/commons-exec-1.4.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.27.0/selenium-safari-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-support/4.27.0/selenium-support-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/io/rest-assured/rest-assured/5.5.0/rest-assured-5.5.0.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/groovy/groovy/4.0.22/groovy-4.0.22.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/groovy/groovy-xml/4.0.22/groovy-xml-4.0.22.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/rajatkamleshwar/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/rajatkamleshwar/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/rajatkamleshwar/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/rajatkamleshwar/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/rajatkamleshwar/.m2/repository/io/rest-assured/json-path/5.5.0/json-path-5.5.0.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/groovy/groovy-json/4.0.22/groovy-json-4.0.22.jar:/Users/rajatkamleshwar/.m2/repository/io/rest-assured/rest-assured-common/5.5.0/rest-assured-common-5.5.0.jar:/Users/rajatkamleshwar/.m2/repository/io/rest-assured/xml-path/5.5.0/xml-path-5.5.0.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/rajatkamleshwar/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.18.2/jackson-databind-2.18.2.jar:/Users/rajatkamleshwar/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.18.2/jackson-annotations-2.18.2.jar:/Users/rajatkamleshwar/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.18.2/jackson-core-2.18.2.jar:/Users/rajatkamleshwar/.m2/repository/com/google/code/gson/gson/2.11.0/gson-2.11.0.jar:/Users/rajatkamleshwar/.m2/repository/com/google/errorprone/error_prone_annotations/2.27.0/error_prone_annotations-2.27.0.jar:/Users/rajatkamleshwar/.m2/repository/com/browserstack/browserstack-local-java/1.1.4/browserstack-local-java-1.1.4.jar:/Users/rajatkamleshwar/.m2/repository/commons-io/commons-io/2.16.1/commons-io-2.16.1.jar:/Users/rajatkamleshwar/.m2/repository/org/json/json/20231013/json-20231013.jar:/Users/rajatkamleshwar/.m2/repository/com/browserstack/browserstack-java-sdk/1.29.0/browserstack-java-sdk-1.29.0.jar:/Users/rajatkamleshwar/.m2/repository/org/yaml/snakeyaml/2.0/snakeyaml-2.0.jar:"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="OBSERVABILITY_BUILD_HASHED_ID" value="h2sujjeu9bbexrg61ao3qrmnpvg0gsetdgiitczt"/>
+    <property name="OBSERVABILITY_BUILD_HASHED_ID" value="pvpd9ir9hi9gjcd8vm95hjiopmvnqeodrctds3ie"/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="user.timezone" value="Asia/Kolkata"/>
     <property name="os.name" value="Mac OS X"/>
@@ -16,11 +16,11 @@
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/lib"/>
     <property name="OBSERVABILITY_ALLOW_SCREENSHOTS" value="true"/>
-    <property name="BROWSERSTACK_TESTHUB_JWT" value="eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJicm93c2Vyc3RhY2tfb2IiLCJzdWIiOiI5MjQ1MTgxIiwiZ3JvdXBfaWQiOjkxNTYxMDksInVzZXJfaWQiOjkyNDUxODEsImJ1aWxkX2hhc2hlZF9pZCI6Imgyc3VqamV1OWJiZXhyZzYxYW8zcXJtbnB2ZzBnc2V0ZGdpaXRjenQiLCJwcm9qZWN0X25hbWUiOiJCcm93c2VyU3RhY2sgU2FtcGxlIiwiaG9va19hc190ZXN0IjoiMSIsImJ1aWxkX25hbWUiOiJicm93c2Vyc3RhY2stYnVpbGQiLCJwcm9kdWN0X21hcCI6IntcIm9ic2VydmFiaWxpdHlcIjp0cnVlLFwiYXV0b21hdGVcIjp0cnVlLFwib3JpZ2luRnJvbVByb2R1Y3RNYXBcIjpcIkF1dG9tYXRlXCIsXCJic3RhY2tBdXRvbWF0aW9uXCI6dHJ1ZSxcInByb2R1Y3RGaWx0ZXJTb3VyY2VcIjp0cnVlLFwiY2FkXCI6dHJ1ZX0iLCJncnJfcmVnaW9uIjoiIiwic2lnbmluZ19rZXlfaGFzaCI6IjdkZjZlNjgzYzY3MDkxYjZiY2FiNDk1ZTNmN2YyYWExNjljNzVmMzFmYmFmYTUwZjQ3MDI0YzgxYjllNzA1M2QiLCJpYXQiOjE3MzUwNDMwNzcsImV4cCI6MTczNTM4ODY3N30.he7EfBi4-l9YTfMGsH4sozDuPziE-oLo7aL5ZbaQ2Ts"/>
-    <property name="sun.java.command" value="/Users/rajatkamleshwar/Documents/GitHub/BrowserStack-Assessment/target/surefire/surefirebooter-20241224175432781_3.jar /Users/rajatkamleshwar/Documents/GitHub/BrowserStack-Assessment/target/surefire 2024-12-24T17-54-32_738-jvmRun1 surefire-20241224175432781_1tmp surefire_0-20241224175432781_2tmp"/>
+    <property name="BROWSERSTACK_TESTHUB_JWT" value="eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJicm93c2Vyc3RhY2tfb2IiLCJzdWIiOiI5MjQ1MTgxIiwiZ3JvdXBfaWQiOjkxNTYxMDksInVzZXJfaWQiOjkyNDUxODEsImJ1aWxkX2hhc2hlZF9pZCI6InB2cGQ5aXI5aGk5Z2pjZDh2bTk1aGppb3Btdm5xZW9kcmN0ZHMzaWUiLCJwcm9qZWN0X25hbWUiOiJCcm93c2VyU3RhY2sgV2ViU2NyYXBpbmcgQXNzZXNzbWVudCIsImhvb2tfYXNfdGVzdCI6IjEiLCJidWlsZF9uYW1lIjoiYnJvd3NlcnN0YWNrLXRlc3RCdWlsZCIsInByb2R1Y3RfbWFwIjoie1wib2JzZXJ2YWJpbGl0eVwiOnRydWUsXCJhdXRvbWF0ZVwiOnRydWUsXCJvcmlnaW5Gcm9tUHJvZHVjdE1hcFwiOlwiQXV0b21hdGVcIixcImJzdGFja0F1dG9tYXRpb25cIjp0cnVlLFwicHJvZHVjdEZpbHRlclNvdXJjZVwiOnRydWUsXCJjYWRcIjp0cnVlfSIsImdycl9yZWdpb24iOiIiLCJzaWduaW5nX2tleV9oYXNoIjoiN2RmNmU2ODNjNjcwOTFiNmJjYWI0OTVlM2Y3ZjJhYTE2OWM3NWYzMWZiYWZhNTBmNDcwMjRjODFiOWU3MDUzZCIsImlhdCI6MTczNTEyNzAxOCwiZXhwIjoxNzM1NDcyNjE4fQ.yIvOBsFCvZTo2dwcoogsSh3_RdWI59vvSKFYtxNyiIQ"/>
+    <property name="sun.java.command" value="/Users/rajatkamleshwar/Documents/GitHub/BrowserStack-Assessment/target/surefire/surefirebooter-20241225171333982_3.jar /Users/rajatkamleshwar/Documents/GitHub/BrowserStack-Assessment/target/surefire 2024-12-25T17-13-33_936-jvmRun1 surefire-20241225171333982_1tmp surefire_0-20241225171333982_2tmp"/>
     <property name="http.nonProxyHosts" value="dns.google|*.dns.google|one.one.one.one|*.one.one.one.one|beacons.gvt2.com|*.beacons.gvt2.com|beacons2.gvt2.com|*.beacons2.gvt2.com|ocsp.digicert.com|*.ocsp.digicert.com"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/Users/rajatkamleshwar/Documents/GitHub/BrowserStack-Assessment/target/test-classes:/Users/rajatkamleshwar/Documents/GitHub/BrowserStack-Assessment/target/classes:/Users/rajatkamleshwar/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/Users/rajatkamleshwar/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/rajatkamleshwar/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/rajatkamleshwar/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-java/4.27.0/selenium-java-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-api/4.27.0/selenium-api-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.27.0/selenium-chrome-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.27.0/selenium-chromium-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-json/4.27.0/selenium-json-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.27.0/selenium-manager-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v129/4.27.0/selenium-devtools-v129-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v130/4.27.0/selenium-devtools-v130-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v131/4.27.0/selenium-devtools-v131-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.27.0/selenium-devtools-v85-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.27.0/selenium-edge-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.27.0/selenium-firefox-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-http/4.27.0/selenium-http-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.27.0/selenium-ie-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.27.0/selenium-remote-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/com/google/guava/guava/33.3.1-jre/guava-33.3.1-jre.jar:/Users/rajatkamleshwar/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/Users/rajatkamleshwar/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/rajatkamleshwar/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/rajatkamleshwar/.m2/repository/org/checkerframework/checker-qual/3.43.0/checker-qual-3.43.0.jar:/Users/rajatkamleshwar/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.25.0-alpha/opentelemetry-semconv-1.25.0-alpha.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-api/1.44.1/opentelemetry-api-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-context/1.44.1/opentelemetry-context-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.44.1/opentelemetry-exporter-logging-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.44.1/opentelemetry-sdk-common-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.44.1/opentelemetry-sdk-extension-autoconfigure-spi-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.44.1/opentelemetry-sdk-extension-autoconfigure-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-api-incubator/1.44.1-alpha/opentelemetry-api-incubator-1.44.1-alpha.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.44.1/opentelemetry-sdk-trace-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.44.1/opentelemetry-sdk-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.44.1/opentelemetry-sdk-metrics-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.44.1/opentelemetry-sdk-logs-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/net/bytebuddy/byte-buddy/1.15.10/byte-buddy-1.15.10.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-os/4.27.0/selenium-os-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/commons/commons-exec/1.4.0/commons-exec-1.4.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.27.0/selenium-safari-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-support/4.27.0/selenium-support-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/io/rest-assured/rest-assured/5.5.0/rest-assured-5.5.0.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/groovy/groovy/4.0.22/groovy-4.0.22.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/groovy/groovy-xml/4.0.22/groovy-xml-4.0.22.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/rajatkamleshwar/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/rajatkamleshwar/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/rajatkamleshwar/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/rajatkamleshwar/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/rajatkamleshwar/.m2/repository/io/rest-assured/json-path/5.5.0/json-path-5.5.0.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/groovy/groovy-json/4.0.22/groovy-json-4.0.22.jar:/Users/rajatkamleshwar/.m2/repository/io/rest-assured/rest-assured-common/5.5.0/rest-assured-common-5.5.0.jar:/Users/rajatkamleshwar/.m2/repository/io/rest-assured/xml-path/5.5.0/xml-path-5.5.0.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/rajatkamleshwar/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.18.2/jackson-databind-2.18.2.jar:/Users/rajatkamleshwar/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.18.2/jackson-annotations-2.18.2.jar:/Users/rajatkamleshwar/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.18.2/jackson-core-2.18.2.jar:/Users/rajatkamleshwar/.m2/repository/com/google/code/gson/gson/2.11.0/gson-2.11.0.jar:/Users/rajatkamleshwar/.m2/repository/com/google/errorprone/error_prone_annotations/2.27.0/error_prone_annotations-2.27.0.jar:/Users/rajatkamleshwar/.m2/repository/com/browserstack/browserstack-local-java/1.1.4/browserstack-local-java-1.1.4.jar:/Users/rajatkamleshwar/.m2/repository/commons-io/commons-io/2.16.1/commons-io-2.16.1.jar:/Users/rajatkamleshwar/.m2/repository/org/json/json/20231013/json-20231013.jar:/Users/rajatkamleshwar/.m2/repository/com/browserstack/browserstack-java-sdk/1.29.0/browserstack-java-sdk-1.29.0.jar:"/>
+    <property name="surefire.test.class.path" value="/Users/rajatkamleshwar/Documents/GitHub/BrowserStack-Assessment/target/test-classes:/Users/rajatkamleshwar/Documents/GitHub/BrowserStack-Assessment/target/classes:/Users/rajatkamleshwar/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/Users/rajatkamleshwar/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/rajatkamleshwar/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/rajatkamleshwar/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-java/4.27.0/selenium-java-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-api/4.27.0/selenium-api-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.27.0/selenium-chrome-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.27.0/selenium-chromium-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-json/4.27.0/selenium-json-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.27.0/selenium-manager-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v129/4.27.0/selenium-devtools-v129-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v130/4.27.0/selenium-devtools-v130-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v131/4.27.0/selenium-devtools-v131-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.27.0/selenium-devtools-v85-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.27.0/selenium-edge-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.27.0/selenium-firefox-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-http/4.27.0/selenium-http-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.27.0/selenium-ie-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.27.0/selenium-remote-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/com/google/guava/guava/33.3.1-jre/guava-33.3.1-jre.jar:/Users/rajatkamleshwar/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/Users/rajatkamleshwar/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/rajatkamleshwar/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/rajatkamleshwar/.m2/repository/org/checkerframework/checker-qual/3.43.0/checker-qual-3.43.0.jar:/Users/rajatkamleshwar/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.25.0-alpha/opentelemetry-semconv-1.25.0-alpha.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-api/1.44.1/opentelemetry-api-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-context/1.44.1/opentelemetry-context-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.44.1/opentelemetry-exporter-logging-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.44.1/opentelemetry-sdk-common-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.44.1/opentelemetry-sdk-extension-autoconfigure-spi-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.44.1/opentelemetry-sdk-extension-autoconfigure-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-api-incubator/1.44.1-alpha/opentelemetry-api-incubator-1.44.1-alpha.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.44.1/opentelemetry-sdk-trace-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.44.1/opentelemetry-sdk-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.44.1/opentelemetry-sdk-metrics-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.44.1/opentelemetry-sdk-logs-1.44.1.jar:/Users/rajatkamleshwar/.m2/repository/net/bytebuddy/byte-buddy/1.15.10/byte-buddy-1.15.10.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-os/4.27.0/selenium-os-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/commons/commons-exec/1.4.0/commons-exec-1.4.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.27.0/selenium-safari-driver-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/org/seleniumhq/selenium/selenium-support/4.27.0/selenium-support-4.27.0.jar:/Users/rajatkamleshwar/.m2/repository/io/rest-assured/rest-assured/5.5.0/rest-assured-5.5.0.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/groovy/groovy/4.0.22/groovy-4.0.22.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/groovy/groovy-xml/4.0.22/groovy-xml-4.0.22.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/rajatkamleshwar/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/rajatkamleshwar/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/rajatkamleshwar/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/rajatkamleshwar/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/rajatkamleshwar/.m2/repository/io/rest-assured/json-path/5.5.0/json-path-5.5.0.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/groovy/groovy-json/4.0.22/groovy-json-4.0.22.jar:/Users/rajatkamleshwar/.m2/repository/io/rest-assured/rest-assured-common/5.5.0/rest-assured-common-5.5.0.jar:/Users/rajatkamleshwar/.m2/repository/io/rest-assured/xml-path/5.5.0/xml-path-5.5.0.jar:/Users/rajatkamleshwar/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/rajatkamleshwar/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.18.2/jackson-databind-2.18.2.jar:/Users/rajatkamleshwar/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.18.2/jackson-annotations-2.18.2.jar:/Users/rajatkamleshwar/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.18.2/jackson-core-2.18.2.jar:/Users/rajatkamleshwar/.m2/repository/com/google/code/gson/gson/2.11.0/gson-2.11.0.jar:/Users/rajatkamleshwar/.m2/repository/com/google/errorprone/error_prone_annotations/2.27.0/error_prone_annotations-2.27.0.jar:/Users/rajatkamleshwar/.m2/repository/com/browserstack/browserstack-local-java/1.1.4/browserstack-local-java-1.1.4.jar:/Users/rajatkamleshwar/.m2/repository/commons-io/commons-io/2.16.1/commons-io-2.16.1.jar:/Users/rajatkamleshwar/.m2/repository/org/json/json/20231013/json-20231013.jar:/Users/rajatkamleshwar/.m2/repository/com/browserstack/browserstack-java-sdk/1.29.0/browserstack-java-sdk-1.29.0.jar:/Users/rajatkamleshwar/.m2/repository/org/yaml/snakeyaml/2.0/snakeyaml-2.0.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/rajatkamleshwar"/>
     <property name="user.language" value="en"/>
@@ -33,7 +33,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/Users/rajatkamleshwar/Documents/GitHub/BrowserStack-Assessment/target/surefire/surefirebooter-20241224175432781_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/rajatkamleshwar/Documents/GitHub/BrowserStack-Assessment/target/surefire/surefirebooter-20241225171333982_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="dns.google|*.dns.google|one.one.one.one|*.one.one.one.one|beacons.gvt2.com|*.beacons.gvt2.com|beacons2.gvt2.com|*.beacons2.gvt2.com|ocsp.digicert.com|*.ocsp.digicert.com"/>
     <property name="java.runtime.version" value="17.0.9+11-LTS-201"/>
@@ -46,12 +46,17 @@
     <property name="localRepository" value="/Users/rajatkamleshwar/.m2/repository"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="/var/folders/by/5v7xcfls19x78gwlstzrmqzm0000gp/T/"/>
-    <property name="BROWSERSTACK_TESTHUB_UUID" value="h2sujjeu9bbexrg61ao3qrmnpvg0gsetdgiitczt"/>
+    <property name="BROWSERSTACK_TESTHUB_UUID" value="pvpd9ir9hi9gjcd8vm95hjiopmvnqeodrctds3ie"/>
     <property name="java.version" value="17.0.9"/>
     <property name="user.dir" value="/Users/rajatkamleshwar/Documents/GitHub/BrowserStack-Assessment"/>
     <property name="os.arch" value="aarch64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="setup@5" value="5"/>
+    <property name="setup@4" value="4"/>
+    <property name="setup@3" value="3"/>
+    <property name="setup@2" value="2"/>
     <property name="native.encoding" value="UTF-8"/>
+    <property name="setup@1" value="1"/>
     <property name="setup@0" value="0"/>
     <property name="java.library.path" value="/Users/rajatkamleshwar/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
@@ -61,29 +66,253 @@
     <property name="socksNonProxyHosts" value="dns.google|*.dns.google|one.one.one.one|*.one.one.one.one|beacons.gvt2.com|*.beacons.gvt2.com|beacons2.gvt2.com|*.beacons2.gvt2.com|ocsp.digicert.com|*.ocsp.digicert.com"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="navigateToWebsite" classname="WebScrapingTest" time="1.22">
-    <system-out><![CDATA[WebDriver initialized for: Chrome
+  <testcase name="setup" classname="WebScrapingTest" time="0.506">
+    <failure message="unsupported operation: Unable to maximize window on Android platform&#10;  (Session info: chrome=128.0.6613.146)&#10;Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.0&apos;, java.version: &apos;17.0.9&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [e7951530d8f68ec1a36a65eb2cb8c86aeb3ee7cf, maximizeCurrentWindow {}]&#10;Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: chrome, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18082, databaseEnabled: false, desired: {browserName: chrome, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18082, deviceName: android, goog:chromeOptions: {args: [--disable-extensions, --remote-allow-origins=*, --proxy-bypass-list=&lt;-loopb..., test-type, --proxy-server=http://185.2..., --disable-features=Translate]}, newCommandTimeout: 0, platformName: Android, skipServerInstallation: true, systemPort: 8202, udid: RZCW127QX4T}, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-S918B, deviceName: RZCW127QX4T, deviceScreenDensity: 450, deviceScreenSize: 1080x2316, deviceUDID: RZCW127QX4T, goog:chromeOptions: {args: [--disable-extensions, --remote-allow-origins=*, --proxy-bypass-list=&lt;-loopb..., test-type, --proxy-server=http://185.2..., --disable-features=Translate]}, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 0, optimalHubUrl: hub-aps.browserstack.com, pixelRatio: 2.8125, platform: LINUX, platformName: ANDROID, platformVersion: 13, skipServerInstallation: true, statBarHeight: 75, systemPort: 8202, takesScreenshot: true, udid: RZCW127QX4T, viewportRect: {height: 2031, left: 0, top: 75, width: 1080}, warnings: {}, webStorageEnabled: false}&#10;Session ID: e7951530d8f68ec1a36a65eb2cb8c86aeb3ee7cf" type="org.openqa.selenium.UnsupportedCommandException"><![CDATA[org.openqa.selenium.UnsupportedCommandException: 
+unsupported operation: Unable to maximize window on Android platform
+  (Session info: chrome=128.0.6613.146)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e7951530d8f68ec1a36a65eb2cb8c86aeb3ee7cf, maximizeCurrentWindow {}]
+Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: chrome, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18082, databaseEnabled: false, desired: {browserName: chrome, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18082, deviceName: android, goog:chromeOptions: {args: [--disable-extensions, --remote-allow-origins=*, --proxy-bypass-list=<-loopb..., test-type, --proxy-server=http://185.2..., --disable-features=Translate]}, newCommandTimeout: 0, platformName: Android, skipServerInstallation: true, systemPort: 8202, udid: RZCW127QX4T}, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-S918B, deviceName: RZCW127QX4T, deviceScreenDensity: 450, deviceScreenSize: 1080x2316, deviceUDID: RZCW127QX4T, goog:chromeOptions: {args: [--disable-extensions, --remote-allow-origins=*, --proxy-bypass-list=<-loopb..., test-type, --proxy-server=http://185.2..., --disable-features=Translate]}, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 0, optimalHubUrl: hub-aps.browserstack.com, pixelRatio: 2.8125, platform: LINUX, platformName: ANDROID, platformVersion: 13, skipServerInstallation: true, statBarHeight: 75, systemPort: 8202, takesScreenshot: true, udid: RZCW127QX4T, viewportRect: {height: 2031, left: 0, top: 75, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: e7951530d8f68ec1a36a65eb2cb8c86aeb3ee7cf
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1061)
+	at WebScrapingTest.setup(WebScrapingTest.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+]]></failure>
+    <system-out><![CDATA[*************************Chrome Browser Invoked!*************************
+WebDriver initialized for: Chrome
+*************************Chrome Browser Invoked!*************************
+WebDriver initialized for: Chrome
+*************************Chrome Browser Invoked!*************************
+WebDriver initialized for: Chrome
+*************************Chrome Browser Invoked!*************************
+WebDriver initialized for: Chrome
 Navigated to: https://elpais.com/
 ]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Dec 24, 2024 5:54:50 PM org.openqa.selenium.devtools.CdpEndpointFinder getCdpEndPoint
+Dec 25, 2024 5:13:51 PM org.openqa.selenium.devtools.CdpEndpointFinder getCdpEndPoint
 WARNING: Unable to connect to determine websocket url: java.net.ConnectException
+Dec 25, 2024 5:13:53 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 17
+Dec 25, 2024 5:13:53 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 17.3. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Dec 25, 2024 5:13:57 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="verifyLanguage" classname="WebScrapingTest" time="2.352">
+  <testcase name="navigateToWebsite" classname="WebScrapingTest" time="0.0">
+    <skipped message="unsupported operation: Unable to maximize window on Android platform&#10;  (Session info: chrome=128.0.6613.146)&#10;Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.0&apos;, java.version: &apos;17.0.9&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [e7951530d8f68ec1a36a65eb2cb8c86aeb3ee7cf, maximizeCurrentWindow {}]&#10;Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: chrome, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18082, databaseEnabled: false, desired: {browserName: chrome, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18082, deviceName: android, goog:chromeOptions: {args: [--disable-extensions, --remote-allow-origins=*, --proxy-bypass-list=&lt;-loopb..., test-type, --proxy-server=http://185.2..., --disable-features=Translate]}, newCommandTimeout: 0, platformName: Android, skipServerInstallation: true, systemPort: 8202, udid: RZCW127QX4T}, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-S918B, deviceName: RZCW127QX4T, deviceScreenDensity: 450, deviceScreenSize: 1080x2316, deviceUDID: RZCW127QX4T, goog:chromeOptions: {args: [--disable-extensions, --remote-allow-origins=*, --proxy-bypass-list=&lt;-loopb..., test-type, --proxy-server=http://185.2..., --disable-features=Translate]}, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 0, optimalHubUrl: hub-aps.browserstack.com, pixelRatio: 2.8125, platform: LINUX, platformName: ANDROID, platformVersion: 13, skipServerInstallation: true, statBarHeight: 75, systemPort: 8202, takesScreenshot: true, udid: RZCW127QX4T, viewportRect: {height: 2031, left: 0, top: 75, width: 1080}, warnings: {}, webStorageEnabled: false}&#10;Session ID: e7951530d8f68ec1a36a65eb2cb8c86aeb3ee7cf"/>
+  </testcase>
+  <testcase name="navigateToWebsite" classname="WebScrapingTest" time="11.432">
+    <system-out><![CDATA[Navigated to: https://elpais.com/
+Navigated to: https://elpais.com/
+*************************Chrome Browser Invoked!*************************
+WebDriver initialized for: Chrome
+Navigated to: https://elpais.com/
+Clicked on m-WEB Notice!
+]]></system-out>
+    <system-err><![CDATA[Dec 25, 2024 5:14:06 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for null. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="navigateToWebsite" classname="WebScrapingTest" time="6.631">
+    <system-out><![CDATA[Clicked on WEB Notice!
+]]></system-out>
+  </testcase>
+  <testcase name="navigateToWebsite" classname="WebScrapingTest" time="1.312">
+    <system-out><![CDATA[Clicked on WEB Notice!
+]]></system-out>
+  </testcase>
+  <testcase name="navigateToWebsite" classname="WebScrapingTest" time="7.44">
+    <system-out><![CDATA[Clicked on WEB Notice!
+]]></system-out>
+  </testcase>
+  <testcase name="navigateToWebsite" classname="WebScrapingTest" time="41.25">
+    <system-out><![CDATA[*************************Chrome Browser Invoked!*************************
+WebDriver initialized for: Chrome
+Navigated to: https://elpais.com/
+Clicked on WEB Notice!
+]]></system-out>
+    <system-err><![CDATA[Dec 25, 2024 5:14:55 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 133, returning the closest version; found: 131; Please update to a Selenium version that supports CDP version 133
+]]></system-err>
+  </testcase>
+  <testcase name="verifyLanguage" classname="WebScrapingTest" time="0.0">
+    <skipped message="Method WebScrapingTest.verifyLanguage() on instance WebScrapingTest@15923407 depends on not successfully finished methods &#10;[WebScrapingTest.navigateToWebsite() on instance WebScrapingTest@15923407]"/>
+  </testcase>
+  <testcase name="verifyLanguage" classname="WebScrapingTest" time="0.637">
     <system-out><![CDATA[Default language is Spanish
 ]]></system-out>
   </testcase>
-  <testcase name="scrapeArticles" classname="WebScrapingTest" time="30.348">
-    <system-out><![CDATA[Articles scraped from Opinion section!:
+  <testcase name="verifyLanguage" classname="WebScrapingTest" time="0.041">
+    <failure message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.0&apos;, java.version: &apos;17.0.9&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, findElement {value=//button[@id=&apos;btn_open_hamburger&apos;], using=xpath}]&#10;Capabilities {automationName: XCUITest, bootstrapPath: /usr/local/.browserstack/co..., browserName: safari, browserVersion: null, browserstack.isTargetBased: true, databaseEnabled: false, deviceName: iPhone 15, deviceOrientation: PORTRAIT, javascriptEnabled: true, keychainPassword: [REDACTED VALUE], keychainPath: [REDACTED VALUE], locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 0, noReset: true, optimalHubUrl: hub-aps.browserstack.com, orientation: PORTRAIT, platform: MAC, platformName: IOS, realMobile: true, safariIgnoreFraudWarning: true, takesScreenshot: true, udid: 00008120-00122D2826C2201E, useXctestrunFile: true, webStorageEnabled: false}" type="org.openqa.selenium.NoSuchSessionException"><![CDATA[org.openqa.selenium.NoSuchSessionException: 
+Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {value=//button[@id='btn_open_hamburger'], using=xpath}]
+Capabilities {automationName: XCUITest, bootstrapPath: /usr/local/.browserstack/co..., browserName: safari, browserVersion: null, browserstack.isTargetBased: true, databaseEnabled: false, deviceName: iPhone 15, deviceOrientation: PORTRAIT, javascriptEnabled: true, keychainPassword: [REDACTED VALUE], keychainPath: [REDACTED VALUE], locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 0, noReset: true, optimalHubUrl: hub-aps.browserstack.com, orientation: PORTRAIT, platform: MAC, platformName: IOS, realMobile: true, safariIgnoreFraudWarning: true, takesScreenshot: true, udid: 00008120-00122D2826C2201E, useXctestrunFile: true, webStorageEnabled: false}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:151)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at WebScrapingTest.verifyLanguage(WebScrapingTest.java:111)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+]]></failure>
+  </testcase>
+  <testcase name="verifyLanguage" classname="WebScrapingTest" time="0.041">
+    <failure message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.0&apos;, java.version: &apos;17.0.9&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, findElement {value=//button[@id=&apos;btn_open_hamburger&apos;], using=xpath}]&#10;Capabilities {automationName: XCUITest, bootstrapPath: /usr/local/.browserstack/co..., browserName: safari, browserVersion: null, browserstack.isTargetBased: true, databaseEnabled: false, deviceName: iPhone 15, deviceOrientation: PORTRAIT, javascriptEnabled: true, keychainPassword: [REDACTED VALUE], keychainPath: [REDACTED VALUE], locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 0, noReset: true, optimalHubUrl: hub-aps.browserstack.com, orientation: PORTRAIT, platform: MAC, platformName: IOS, realMobile: true, safariIgnoreFraudWarning: true, takesScreenshot: true, udid: 00008120-00122D2826C2201E, useXctestrunFile: true, webStorageEnabled: false}" type="org.openqa.selenium.NoSuchSessionException"><![CDATA[org.openqa.selenium.NoSuchSessionException: 
+Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {value=//button[@id='btn_open_hamburger'], using=xpath}]
+Capabilities {automationName: XCUITest, bootstrapPath: /usr/local/.browserstack/co..., browserName: safari, browserVersion: null, browserstack.isTargetBased: true, databaseEnabled: false, deviceName: iPhone 15, deviceOrientation: PORTRAIT, javascriptEnabled: true, keychainPassword: [REDACTED VALUE], keychainPath: [REDACTED VALUE], locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 0, noReset: true, optimalHubUrl: hub-aps.browserstack.com, orientation: PORTRAIT, platform: MAC, platformName: IOS, realMobile: true, safariIgnoreFraudWarning: true, takesScreenshot: true, udid: 00008120-00122D2826C2201E, useXctestrunFile: true, webStorageEnabled: false}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:151)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at WebScrapingTest.verifyLanguage(WebScrapingTest.java:111)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+]]></failure>
+  </testcase>
+  <testcase name="verifyLanguage" classname="WebScrapingTest" time="0.038">
+    <failure message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.0&apos;, java.version: &apos;17.0.9&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, findElement {value=//button[@id=&apos;btn_open_hamburger&apos;], using=xpath}]&#10;Capabilities {automationName: XCUITest, bootstrapPath: /usr/local/.browserstack/co..., browserName: safari, browserVersion: null, browserstack.isTargetBased: true, databaseEnabled: false, deviceName: iPhone 15, deviceOrientation: PORTRAIT, javascriptEnabled: true, keychainPassword: [REDACTED VALUE], keychainPath: [REDACTED VALUE], locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 0, noReset: true, optimalHubUrl: hub-aps.browserstack.com, orientation: PORTRAIT, platform: MAC, platformName: IOS, realMobile: true, safariIgnoreFraudWarning: true, takesScreenshot: true, udid: 00008120-00122D2826C2201E, useXctestrunFile: true, webStorageEnabled: false}" type="org.openqa.selenium.NoSuchSessionException"><![CDATA[org.openqa.selenium.NoSuchSessionException: 
+Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {value=//button[@id='btn_open_hamburger'], using=xpath}]
+Capabilities {automationName: XCUITest, bootstrapPath: /usr/local/.browserstack/co..., browserName: safari, browserVersion: null, browserstack.isTargetBased: true, databaseEnabled: false, deviceName: iPhone 15, deviceOrientation: PORTRAIT, javascriptEnabled: true, keychainPassword: [REDACTED VALUE], keychainPath: [REDACTED VALUE], locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 0, noReset: true, optimalHubUrl: hub-aps.browserstack.com, orientation: PORTRAIT, platform: MAC, platformName: IOS, realMobile: true, safariIgnoreFraudWarning: true, takesScreenshot: true, udid: 00008120-00122D2826C2201E, useXctestrunFile: true, webStorageEnabled: false}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:151)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at WebScrapingTest.verifyLanguage(WebScrapingTest.java:111)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+]]></failure>
+  </testcase>
+  <testcase name="verifyLanguage" classname="WebScrapingTest" time="0.81">
+    <system-out><![CDATA[Default language is Spanish
+]]></system-out>
+  </testcase>
+  <testcase name="scrapeArticles" classname="WebScrapingTest" time="0.0">
+    <skipped message="Method WebScrapingTest.scrapeArticles() on instance WebScrapingTest@15923407 depends on not successfully finished methods &#10;[WebScrapingTest.verifyLanguage() on instance WebScrapingTest@15923407]"/>
+  </testcase>
+  <testcase name="scrapeArticles" classname="WebScrapingTest" time="11.047">
+    <system-out><![CDATA[Opinion option clicked:
+
+Articles scraped from Opinion section!:
 
 Image Folder cleared successfully!
+Article Headline:	Felipe VI: la exigencia del bien común
+Article Content:	El discurso del Rey homenajea a los afectados por la dana, reclama un acceso a la vivienda “en condiciones asumibles”, y reivindica la dignidad de los inmigrantes y los valores sociales de la democracia
+
+Image URL:	https://imagenes.elpais.com/resizer/v2/Q6XAOHWGGVFCHLHSJOVDLAA7SE.jpg?auth=f797c1d7b9c03879f5d11801a8041ab216bea9abefd0a45916e302224ff464d0&width=414
+
+---------------Image Saved Successfully!---------------
+
+Image URL:	https://imagenes.elpais.com/resizer/v2/MENB7YWVLREHXBY4LBVNWZIIR4.jpg?auth=ac099e45937dabab4a74335d0aff09395f789fb53fed71c0b876f0ca8f8fc872&width=414&height=233&smart=true
+
+---------------Image Saved Successfully!---------------
+
+Image URL:	https://imagenes.elpais.com/resizer/v2/MFLDESMSEFDAZLW7FXE7E22AJ4.JPG?auth=f42c2913c455ba9a723e1d847f769382dfb08073e804aa0196b19765121b7cb0&width=414&height=233&focal=1230%2C240
+
+---------------Image Saved Successfully!---------------
+
+*********************************************************
+
 Article Headline:	El año de Sánchez
 Article Content:	La buena marcha de la Economía compite en España con el ruido político generado por la oposición desde el comienzo de la legislatura
 
-Image URL:	https://imagenes.elpais.com/resizer/v2/7PKQQGMAVRHAHKRIJH32ETR5LE.jpg?auth=55935e9bee3201f4b39f0e9f1df4ab123da538651105a26a69b2ff93960a333c&width=414
+Image URL:	https://imagenes.elpais.com/resizer/v2/Q6XAOHWGGVFCHLHSJOVDLAA7SE.jpg?auth=f797c1d7b9c03879f5d11801a8041ab216bea9abefd0a45916e302224ff464d0&width=414
 
 ---------------Image Saved Successfully!---------------
 
@@ -91,16 +320,16 @@ Image URL:	https://imagenes.elpais.com/resizer/v2/MENB7YWVLREHXBY4LBVNWZIIR4.jpg
 
 ---------------Image Saved Successfully!---------------
 
-Image URL:	https://imagenes.elpais.com/resizer/v2/2LYJPTKARND55DJM4GRYMAKRTA.jpeg?auth=e47d4c0d6c7cbace8aaa134da3c6af7c708750e095e1cfb774d109ecf3bc49c6&width=414&height=233&smart=true
+Image URL:	https://imagenes.elpais.com/resizer/v2/MFLDESMSEFDAZLW7FXE7E22AJ4.JPG?auth=f42c2913c455ba9a723e1d847f769382dfb08073e804aa0196b19765121b7cb0&width=414&height=233&focal=1230%2C240
 
 ---------------Image Saved Successfully!---------------
 
 *********************************************************
 
-Article Headline:	La descarbonización se frena
-Article Content:	El desproporcionado consumo de petróleo en el transporte es un lastre para los objetivos climáticos de España
+Article Headline:	Lo admito, la Tierra es esférica
+Article Content:	No es buena idea confundir la coherencia con la cabezonería, y no hace falta viajar a la Antártida para comprobar que el planeta no es un disco
 
-Image URL:	https://imagenes.elpais.com/resizer/v2/7PKQQGMAVRHAHKRIJH32ETR5LE.jpg?auth=55935e9bee3201f4b39f0e9f1df4ab123da538651105a26a69b2ff93960a333c&width=414
+Image URL:	https://imagenes.elpais.com/resizer/v2/Q6XAOHWGGVFCHLHSJOVDLAA7SE.jpg?auth=f797c1d7b9c03879f5d11801a8041ab216bea9abefd0a45916e302224ff464d0&width=414
 
 ---------------Image Saved Successfully!---------------
 
@@ -108,33 +337,16 @@ Image URL:	https://imagenes.elpais.com/resizer/v2/MENB7YWVLREHXBY4LBVNWZIIR4.jpg
 
 ---------------Image Saved Successfully!---------------
 
-Image URL:	https://imagenes.elpais.com/resizer/v2/2LYJPTKARND55DJM4GRYMAKRTA.jpeg?auth=e47d4c0d6c7cbace8aaa134da3c6af7c708750e095e1cfb774d109ecf3bc49c6&width=414&height=233&smart=true
+Image URL:	https://imagenes.elpais.com/resizer/v2/MFLDESMSEFDAZLW7FXE7E22AJ4.JPG?auth=f42c2913c455ba9a723e1d847f769382dfb08073e804aa0196b19765121b7cb0&width=414&height=233&focal=1230%2C240
 
 ---------------Image Saved Successfully!---------------
 
 *********************************************************
 
-Article Headline:	Niebla en la noche
-Article Content:	Pensé que las redes sociales serían la solución contra la soledad no deseada. Me equivoqué
+Article Headline:	El gobierno de los millonarios
+Article Content:	Por vez primera, los dueños de inmensos monopolios, digitales o no, han llegado directamente al poder político para defender sus intereses
 
-Image URL:	https://imagenes.elpais.com/resizer/v2/7PKQQGMAVRHAHKRIJH32ETR5LE.jpg?auth=55935e9bee3201f4b39f0e9f1df4ab123da538651105a26a69b2ff93960a333c&width=414
-
----------------Image Saved Successfully!---------------
-
-Image URL:	https://imagenes.elpais.com/resizer/v2/MENB7YWVLREHXBY4LBVNWZIIR4.jpg?auth=ac099e45937dabab4a74335d0aff09395f789fb53fed71c0b876f0ca8f8fc872&width=414&height=233&smart=true
-
----------------Image Saved Successfully!---------------
-
-Image URL:	https://imagenes.elpais.com/resizer/v2/2LYJPTKARND55DJM4GRYMAKRTA.jpeg?auth=e47d4c0d6c7cbace8aaa134da3c6af7c708750e095e1cfb774d109ecf3bc49c6&width=414&height=233&smart=true
-
----------------Image Saved Successfully!---------------
-
-*********************************************************
-
-Article Headline:	El barro y mamá: un cuento de Navidad tras la dana
-Article Content:	La memoria crece en los detalles. Aquel fuerte de juguete. El agua creciendo. Las calles anegadas. Los coches amontonados. El cuerpo de la modista de Catarroja flotando en su habitación
-
-Image URL:	https://imagenes.elpais.com/resizer/v2/7PKQQGMAVRHAHKRIJH32ETR5LE.jpg?auth=55935e9bee3201f4b39f0e9f1df4ab123da538651105a26a69b2ff93960a333c&width=414
+Image URL:	https://imagenes.elpais.com/resizer/v2/Q6XAOHWGGVFCHLHSJOVDLAA7SE.jpg?auth=f797c1d7b9c03879f5d11801a8041ab216bea9abefd0a45916e302224ff464d0&width=414
 
 ---------------Image Saved Successfully!---------------
 
@@ -142,7 +354,7 @@ Image URL:	https://imagenes.elpais.com/resizer/v2/MENB7YWVLREHXBY4LBVNWZIIR4.jpg
 
 ---------------Image Saved Successfully!---------------
 
-Image URL:	https://imagenes.elpais.com/resizer/v2/2LYJPTKARND55DJM4GRYMAKRTA.jpeg?auth=e47d4c0d6c7cbace8aaa134da3c6af7c708750e095e1cfb774d109ecf3bc49c6&width=414&height=233&smart=true
+Image URL:	https://imagenes.elpais.com/resizer/v2/MFLDESMSEFDAZLW7FXE7E22AJ4.JPG?auth=f42c2913c455ba9a723e1d847f769382dfb08073e804aa0196b19765121b7cb0&width=414&height=233&focal=1230%2C240
 
 ---------------Image Saved Successfully!---------------
 
@@ -151,7 +363,7 @@ Image URL:	https://imagenes.elpais.com/resizer/v2/2LYJPTKARND55DJM4GRYMAKRTA.jpe
 Article Headline:	‘Las tres fronteras’
 Article Content:	Este proyecto fotográfico documenta los límites entre Malí, Níger y Burkina Faso, epicentro del conflicto que devasta el Sahel
 
-Image URL:	https://imagenes.elpais.com/resizer/v2/7PKQQGMAVRHAHKRIJH32ETR5LE.jpg?auth=55935e9bee3201f4b39f0e9f1df4ab123da538651105a26a69b2ff93960a333c&width=414
+Image URL:	https://imagenes.elpais.com/resizer/v2/Q6XAOHWGGVFCHLHSJOVDLAA7SE.jpg?auth=f797c1d7b9c03879f5d11801a8041ab216bea9abefd0a45916e302224ff464d0&width=414
 
 ---------------Image Saved Successfully!---------------
 
@@ -159,7 +371,7 @@ Image URL:	https://imagenes.elpais.com/resizer/v2/MENB7YWVLREHXBY4LBVNWZIIR4.jpg
 
 ---------------Image Saved Successfully!---------------
 
-Image URL:	https://imagenes.elpais.com/resizer/v2/2LYJPTKARND55DJM4GRYMAKRTA.jpeg?auth=e47d4c0d6c7cbace8aaa134da3c6af7c708750e095e1cfb774d109ecf3bc49c6&width=414&height=233&smart=true
+Image URL:	https://imagenes.elpais.com/resizer/v2/MFLDESMSEFDAZLW7FXE7E22AJ4.JPG?auth=f42c2913c455ba9a723e1d847f769382dfb08073e804aa0196b19765121b7cb0&width=414&height=233&focal=1230%2C240
 
 ---------------Image Saved Successfully!---------------
 
@@ -167,10 +379,171 @@ Image URL:	https://imagenes.elpais.com/resizer/v2/2LYJPTKARND55DJM4GRYMAKRTA.jpe
 
 ]]></system-out>
   </testcase>
-  <testcase name="translateArticleHeaders" classname="WebScrapingTest" time="3.023">
+  <testcase name="scrapeArticles" classname="WebScrapingTest" time="0.0">
+    <skipped message="Method WebScrapingTest.scrapeArticles() on instance WebScrapingTest@42c2f48c depends on not successfully finished methods &#10;[WebScrapingTest.verifyLanguage() on instance WebScrapingTest@42c2f48c]"/>
+  </testcase>
+  <testcase name="scrapeArticles" classname="WebScrapingTest" time="0.0">
+    <skipped message="Method WebScrapingTest.scrapeArticles() on instance WebScrapingTest@6c37bd27 depends on not successfully finished methods &#10;[WebScrapingTest.verifyLanguage() on instance WebScrapingTest@6c37bd27]"/>
+  </testcase>
+  <testcase name="scrapeArticles" classname="WebScrapingTest" time="0.0">
+    <skipped message="Method WebScrapingTest.scrapeArticles() on instance WebScrapingTest@4fe875be depends on not successfully finished methods &#10;[WebScrapingTest.verifyLanguage() on instance WebScrapingTest@4fe875be]"/>
+  </testcase>
+  <testcase name="scrapeArticles" classname="WebScrapingTest" time="11.426">
+    <system-out><![CDATA[Opinion option clicked:
+
+Articles scraped from Opinion section!:
+
+Image Folder cleared successfully!
+Article Headline:	Felipe VI: la exigencia del bien común
+Article Content:	El discurso del Rey homenajea a los afectados por la dana, reclama un acceso a la vivienda “en condiciones asumibles”, y reivindica la dignidad de los inmigrantes y los valores sociales de la democracia
+
+Image URL:	https://imagenes.elpais.com/resizer/v2/Q6XAOHWGGVFCHLHSJOVDLAA7SE.jpg?auth=f797c1d7b9c03879f5d11801a8041ab216bea9abefd0a45916e302224ff464d0&width=414
+
+---------------Image Saved Successfully!---------------
+
+Image URL:	https://imagenes.elpais.com/resizer/v2/MENB7YWVLREHXBY4LBVNWZIIR4.jpg?auth=ac099e45937dabab4a74335d0aff09395f789fb53fed71c0b876f0ca8f8fc872&width=414&height=233&smart=true
+
+---------------Image Saved Successfully!---------------
+
+Image URL:	https://imagenes.elpais.com/resizer/v2/MFLDESMSEFDAZLW7FXE7E22AJ4.JPG?auth=f42c2913c455ba9a723e1d847f769382dfb08073e804aa0196b19765121b7cb0&width=414&height=233&focal=1230%2C240
+
+---------------Image Saved Successfully!---------------
+
+*********************************************************
+
+Article Headline:	El año de Sánchez
+Article Content:	La buena marcha de la Economía compite en España con el ruido político generado por la oposición desde el comienzo de la legislatura
+
+Image URL:	https://imagenes.elpais.com/resizer/v2/Q6XAOHWGGVFCHLHSJOVDLAA7SE.jpg?auth=f797c1d7b9c03879f5d11801a8041ab216bea9abefd0a45916e302224ff464d0&width=414
+
+---------------Image Saved Successfully!---------------
+
+Image URL:	https://imagenes.elpais.com/resizer/v2/MENB7YWVLREHXBY4LBVNWZIIR4.jpg?auth=ac099e45937dabab4a74335d0aff09395f789fb53fed71c0b876f0ca8f8fc872&width=414&height=233&smart=true
+
+---------------Image Saved Successfully!---------------
+
+Image URL:	https://imagenes.elpais.com/resizer/v2/MFLDESMSEFDAZLW7FXE7E22AJ4.JPG?auth=f42c2913c455ba9a723e1d847f769382dfb08073e804aa0196b19765121b7cb0&width=414&height=233&focal=1230%2C240
+
+---------------Image Saved Successfully!---------------
+
+*********************************************************
+
+Article Headline:	Lo admito, la Tierra es esférica
+Article Content:	No es buena idea confundir la coherencia con la cabezonería, y no hace falta viajar a la Antártida para comprobar que el planeta no es un disco
+
+Image URL:	https://imagenes.elpais.com/resizer/v2/Q6XAOHWGGVFCHLHSJOVDLAA7SE.jpg?auth=f797c1d7b9c03879f5d11801a8041ab216bea9abefd0a45916e302224ff464d0&width=414
+
+---------------Image Saved Successfully!---------------
+
+Image URL:	https://imagenes.elpais.com/resizer/v2/MENB7YWVLREHXBY4LBVNWZIIR4.jpg?auth=ac099e45937dabab4a74335d0aff09395f789fb53fed71c0b876f0ca8f8fc872&width=414&height=233&smart=true
+
+---------------Image Saved Successfully!---------------
+
+Image URL:	https://imagenes.elpais.com/resizer/v2/MFLDESMSEFDAZLW7FXE7E22AJ4.JPG?auth=f42c2913c455ba9a723e1d847f769382dfb08073e804aa0196b19765121b7cb0&width=414&height=233&focal=1230%2C240
+
+---------------Image Saved Successfully!---------------
+
+*********************************************************
+
+Article Headline:	El gobierno de los millonarios
+Article Content:	Por vez primera, los dueños de inmensos monopolios, digitales o no, han llegado directamente al poder político para defender sus intereses
+
+Image URL:	https://imagenes.elpais.com/resizer/v2/Q6XAOHWGGVFCHLHSJOVDLAA7SE.jpg?auth=f797c1d7b9c03879f5d11801a8041ab216bea9abefd0a45916e302224ff464d0&width=414
+
+---------------Image Saved Successfully!---------------
+
+Image URL:	https://imagenes.elpais.com/resizer/v2/MENB7YWVLREHXBY4LBVNWZIIR4.jpg?auth=ac099e45937dabab4a74335d0aff09395f789fb53fed71c0b876f0ca8f8fc872&width=414&height=233&smart=true
+
+---------------Image Saved Successfully!---------------
+
+Image URL:	https://imagenes.elpais.com/resizer/v2/MFLDESMSEFDAZLW7FXE7E22AJ4.JPG?auth=f42c2913c455ba9a723e1d847f769382dfb08073e804aa0196b19765121b7cb0&width=414&height=233&focal=1230%2C240
+
+---------------Image Saved Successfully!---------------
+
+*********************************************************
+
+Article Headline:	‘Las tres fronteras’
+Article Content:	Este proyecto fotográfico documenta los límites entre Malí, Níger y Burkina Faso, epicentro del conflicto que devasta el Sahel
+
+Image URL:	https://imagenes.elpais.com/resizer/v2/Q6XAOHWGGVFCHLHSJOVDLAA7SE.jpg?auth=f797c1d7b9c03879f5d11801a8041ab216bea9abefd0a45916e302224ff464d0&width=414
+
+---------------Image Saved Successfully!---------------
+
+Image URL:	https://imagenes.elpais.com/resizer/v2/MENB7YWVLREHXBY4LBVNWZIIR4.jpg?auth=ac099e45937dabab4a74335d0aff09395f789fb53fed71c0b876f0ca8f8fc872&width=414&height=233&smart=true
+
+---------------Image Saved Successfully!---------------
+
+Image URL:	https://imagenes.elpais.com/resizer/v2/MFLDESMSEFDAZLW7FXE7E22AJ4.JPG?auth=f42c2913c455ba9a723e1d847f769382dfb08073e804aa0196b19765121b7cb0&width=414&height=233&focal=1230%2C240
+
+---------------Image Saved Successfully!---------------
+
+*********************************************************
+
+]]></system-out>
+  </testcase>
+  <testcase name="translateArticleHeaders" classname="WebScrapingTest" time="0.0">
+    <skipped message="Method WebScrapingTest.translateArticleHeaders() on instance WebScrapingTest@15923407 depends on not successfully finished methods &#10;[WebScrapingTest.scrapeArticles() on instance WebScrapingTest@15923407]"/>
+  </testcase>
+  <testcase name="translateArticleHeaders" classname="WebScrapingTest" time="2.801">
     <system-out><![CDATA[
 ************* Translated Headers: *************
 
+Spanish Header:	Felipe VI: la exigencia del bien común
+Request method:	POST
+Request URI:	https://ultra-fast-translation.p.rapidapi.com/t
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-RapidAPI-Host=ultra-fast-translation.p.rapidapi.com
+				X-RapidAPI-Key=c2432b444dmsh909f603234f0c69p1a0e09jsne64b3c285be3
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "q": "Felipe VI la exigencia del bien comn",
+    "e": "",
+    "from": "es",
+    "to": "en"
+}
+HTTP/1.1 200 OK
+Date: Wed, 25 Dec 2024 11:44:35 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Content-Encoding: gzip
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Cross-Origin-Resource-Policy: cross-origin
+Pragma: no-cache
+Accept-CH: Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Cross-Origin-Opener-Policy: same-origin
+Content-Security-Policy: require-trusted-types-for 'script';report-uri /_/TranslateApiHttp/cspreport
+Content-Security-Policy: script-src 'report-sample' 'nonce-8JetqzB2QS43Or5BiY94zg' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/TranslateApiHttp/cspreport;worker-src 'self'
+Access-Control-Allow-Origin: *
+Permissions-Policy: ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*
+X-XSS-Protection: 0
+reporting-endpoints: default="/_/TranslateApiHttp/web-reports?context=eJzjktDikmLw05BicEqfwRoCxH9krrJ6911lFeLhWPxg_W42gR1N8-YzKikl5RfGlxQl5hXnJJakFqcWlaUWxRsZGJkYGhma6RlYxBcYAACSdBi1"
+Content-Disposition: attachment; filename="json.txt"; filename*=UTF-8''json.txt
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-RateLimit-rapid-free-plans-hard-limit-Limit: 500000
+X-RateLimit-rapid-free-plans-hard-limit-Remaining: 499623
+X-RateLimit-rapid-free-plans-hard-limit-Reset: 1833045
+Server: RapidAPI-1.2.8
+X-RapidAPI-Version: 1.2.8
+X-RapidAPI-Region: AWS - ap-southeast-1
+X-RapidAPI-Request-Id: b1d3cf16295d1da304d1f53b5f6865749e690ecbf31a3cb56fe39c7dd082a30d
+
+[
+    "Felipe VI the demand for the common good"
+]
+English Header:	Felipe VI the demand for the common good
+--------------------------------------------------------------------------------
 Spanish Header:	El año de Sánchez
 Request method:	POST
 Request URI:	https://ultra-fast-translation.p.rapidapi.com/t
@@ -193,7 +566,7 @@ Body:
     "to": "en"
 }
 HTTP/1.1 200 OK
-Date: Tue, 24 Dec 2024 12:25:35 GMT
+Date: Wed, 25 Dec 2024 11:44:35 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -207,27 +580,27 @@ Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
 Cross-Origin-Opener-Policy: same-origin
 Permissions-Policy: ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*
 Access-Control-Allow-Origin: *
-Content-Security-Policy: script-src 'report-sample' 'nonce-KPCxHXas69iYMCKbdCZ55g' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/TranslateApiHttp/cspreport;worker-src 'self'
+Content-Security-Policy: script-src 'report-sample' 'nonce-XpCLZXnnQo49MbI_Ut7wKQ' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/TranslateApiHttp/cspreport;worker-src 'self'
 Content-Security-Policy: require-trusted-types-for 'script';report-uri /_/TranslateApiHttp/cspreport
 X-XSS-Protection: 0
-reporting-endpoints: default="/_/TranslateApiHttp/web-reports?context=eJzjktDikmII1pBicEqfwRoCxH9krrJ6911lFeLh2H9h1W42gQ_Lfh9hVFJKyi-MLylKzCvOSSxJLU4tKkstijcyMDIxNDI00zOwiC8wAAC3dhmf"
+reporting-endpoints: default="/_/TranslateApiHttp/web-reports?context=eJzjktDikmJw05BicEqfwRoCxH9krrJ6911lFeLhWPxg_W42gQlnTvxmUlJKyi-MLylKzCvOSSxJLU4tKkstijcyMDIxNDI00zOwiC8wAACpnxlW"
 Content-Disposition: attachment; filename="json.txt"; filename*=UTF-8''json.txt
 X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
 X-RateLimit-rapid-free-plans-hard-limit-Limit: 500000
-X-RateLimit-rapid-free-plans-hard-limit-Remaining: 499861
-X-RateLimit-rapid-free-plans-hard-limit-Reset: 1916985
+X-RateLimit-rapid-free-plans-hard-limit-Remaining: 499622
+X-RateLimit-rapid-free-plans-hard-limit-Reset: 1833045
 Server: RapidAPI-1.2.8
 X-RapidAPI-Version: 1.2.8
 X-RapidAPI-Region: AWS - ap-southeast-1
-X-RapidAPI-Request-Id: 0bfd8cfe1ecc9ec23413e7b73ff707f66526fc90e8257b670482f04093c6205b
+X-RapidAPI-Request-Id: 6f4d1b9607b6018bb6e54bef440a6ef9751d1bdca637e84098394a84987e4014
 
 [
     "The year of Sánchez"
 ]
 English Header:	The year of Sánchez
 --------------------------------------------------------------------------------
-Spanish Header:	La descarbonización se frena
+Spanish Header:	Lo admito, la Tierra es esférica
 Request method:	POST
 Request URI:	https://ultra-fast-translation.p.rapidapi.com/t
 Proxy:			<none>
@@ -243,47 +616,47 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "q": "La descarbonizacin se frena",
+    "q": "Lo admito la Tierra es esfrica",
     "e": "",
     "from": "es",
     "to": "en"
 }
 HTTP/1.1 200 OK
-Date: Tue, 24 Dec 2024 12:25:35 GMT
+Date: Wed, 25 Dec 2024 11:44:36 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 Expires: Mon, 01 Jan 1990 00:00:00 GMT
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
 Content-Encoding: gzip
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
 Cross-Origin-Resource-Policy: cross-origin
 Pragma: no-cache
 Accept-CH: Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version
 Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
 Cross-Origin-Opener-Policy: same-origin
-Permissions-Policy: ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*
-Access-Control-Allow-Origin: *
-X-XSS-Protection: 0
-reporting-endpoints: default="/_/TranslateApiHttp/web-reports?context=eJzjktDikmJw0JBicEqfwRoCxH9krrJ6911lFeLh2H9h1W42gRdTn25lVlJKyi-MLylKzCvOSSxJLU4tKkstijcyMDIxNDI00zOwiC8wAACpChlQ"
-Content-Security-Policy: script-src 'report-sample' 'nonce-wOuuV1FEV_1pCS7TTjawEg' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/TranslateApiHttp/cspreport;worker-src 'self'
 Content-Security-Policy: require-trusted-types-for 'script';report-uri /_/TranslateApiHttp/cspreport
+Content-Security-Policy: script-src 'report-sample' 'nonce-7e_ofnwiioW0f0bTkv7Smg' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/TranslateApiHttp/cspreport;worker-src 'self'
+Access-Control-Allow-Origin: *
+Permissions-Policy: ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*
+X-XSS-Protection: 0
+reporting-endpoints: default="/_/TranslateApiHttp/web-reports?context=eJzjktDikmLw1ZBicEqfwRoCxH9krrJ6911lFeLmWPJg_W42gR8PdpQrKSXlF8aXFCXmFecklqQWpxaVpRbFGxkYmRgaGZrpGVjEFxgAAJuKGUM"
 Content-Disposition: attachment; filename="json.txt"; filename*=UTF-8''json.txt
 X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
 X-RateLimit-rapid-free-plans-hard-limit-Limit: 500000
-X-RateLimit-rapid-free-plans-hard-limit-Remaining: 499860
-X-RateLimit-rapid-free-plans-hard-limit-Reset: 1916985
+X-RateLimit-rapid-free-plans-hard-limit-Remaining: 499621
+X-RateLimit-rapid-free-plans-hard-limit-Reset: 1833044
 Server: RapidAPI-1.2.8
 X-RapidAPI-Version: 1.2.8
 X-RapidAPI-Region: AWS - ap-southeast-1
-X-RapidAPI-Request-Id: 3bd3454782dd1e85bc38e434ebc7e345d4be429f94ae7d43558e657f3842b8e4
+X-RapidAPI-Request-Id: f84f795c9643bdfebd131e7fdf74a6899fdfc2f8f6779aa985e7468e532a51d0
 
 [
-    "Decarbonization slows down"
+    "I admit it the Earth is spherical"
 ]
-English Header:	Decarbonization slows down
+English Header:	I admit it the Earth is spherical
 --------------------------------------------------------------------------------
-Spanish Header:	Niebla en la noche
+Spanish Header:	El gobierno de los millonarios
 Request method:	POST
 Request URI:	https://ultra-fast-translation.p.rapidapi.com/t
 Proxy:			<none>
@@ -299,19 +672,19 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "q": "Niebla en la noche",
+    "q": "El gobierno de los millonarios",
     "e": "",
     "from": "es",
     "to": "en"
 }
 HTTP/1.1 200 OK
-Date: Tue, 24 Dec 2024 12:25:36 GMT
+Date: Wed, 25 Dec 2024 11:44:36 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 Expires: Mon, 01 Jan 1990 00:00:00 GMT
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
 Content-Encoding: gzip
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
 Cross-Origin-Resource-Policy: cross-origin
 Pragma: no-cache
 Accept-CH: Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version
@@ -319,81 +692,25 @@ Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
 Cross-Origin-Opener-Policy: same-origin
 Permissions-Policy: ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*
 Access-Control-Allow-Origin: *
-X-XSS-Protection: 0
-reporting-endpoints: default="/_/TranslateApiHttp/web-reports?context=eJzjktDikmJw0JBicEqfwRoCxH9krrJ6911lFeLhOHBh1W42gQX3p21hVFJKyi-MLylKzCvOSSxJLU4tKkstijcyMDIxNDI00zOwiC8wAACcyBkB"
-Content-Security-Policy: script-src 'report-sample' 'nonce-LAh2VLFgA07acrWiwN0KIw' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/TranslateApiHttp/cspreport;worker-src 'self'
+Content-Security-Policy: script-src 'report-sample' 'nonce-YWt4skXSVakkRH5h60vc1g' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/TranslateApiHttp/cspreport;worker-src 'self'
 Content-Security-Policy: require-trusted-types-for 'script';report-uri /_/TranslateApiHttp/cspreport
+X-XSS-Protection: 0
+reporting-endpoints: default="/_/TranslateApiHttp/web-reports?context=eJzjktDikmJw05BicEqfwRoCxH9krrJ6911lFeLhWPJg_W42gYbpHdeYlJSS8gvjS4oS84pzEktSi1OLylKL4o0MjEwMjQzN9Aws4gsMAI-4GK0"
 Content-Disposition: attachment; filename="json.txt"; filename*=UTF-8''json.txt
 X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
 X-RateLimit-rapid-free-plans-hard-limit-Limit: 500000
-X-RateLimit-rapid-free-plans-hard-limit-Remaining: 499859
-X-RateLimit-rapid-free-plans-hard-limit-Reset: 1916984
+X-RateLimit-rapid-free-plans-hard-limit-Remaining: 499620
+X-RateLimit-rapid-free-plans-hard-limit-Reset: 1833044
 Server: RapidAPI-1.2.8
 X-RapidAPI-Version: 1.2.8
 X-RapidAPI-Region: AWS - ap-southeast-1
-X-RapidAPI-Request-Id: ba0c98b976869f98cba3df604eee33aa06199c70117aef62e1f228234e9a5be2
+X-RapidAPI-Request-Id: bc7033437a945a19b5fff7a473abafbc1bf0485e368150ae07956d654af5bd38
 
 [
-    "Fog at night"
+    "The government of the millionaires"
 ]
-English Header:	Fog at night
---------------------------------------------------------------------------------
-Spanish Header:	El barro y mamá: un cuento de Navidad tras la dana
-Request method:	POST
-Request URI:	https://ultra-fast-translation.p.rapidapi.com/t
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		X-RapidAPI-Host=ultra-fast-translation.p.rapidapi.com
-				X-RapidAPI-Key=c2432b444dmsh909f603234f0c69p1a0e09jsne64b3c285be3
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "q": "El barro y mam un cuento de Navidad tras la dana",
-    "e": "",
-    "from": "es",
-    "to": "en"
-}
-HTTP/1.1 200 OK
-Date: Tue, 24 Dec 2024 12:25:36 GMT
-Content-Type: application/json; charset=utf-8
-Transfer-Encoding: chunked
-Connection: keep-alive
-Expires: Mon, 01 Jan 1990 00:00:00 GMT
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-Content-Encoding: gzip
-Cross-Origin-Resource-Policy: cross-origin
-Pragma: no-cache
-Accept-CH: Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version
-Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-Cross-Origin-Opener-Policy: same-origin
-Permissions-Policy: ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*
-Access-Control-Allow-Origin: *
-X-XSS-Protection: 0
-reporting-endpoints: default="/_/TranslateApiHttp/web-reports?context=eJzjktDikmLw15BicEqfwRoCxH9krrJ6911lFeLhOHBh1W42gRPH9_czKykl5RfGlxQl5hXnJJakFqcWlaUWxRsZGJkYGhma6RlYxBcYAACklRkm"
-Content-Security-Policy: require-trusted-types-for 'script';report-uri /_/TranslateApiHttp/cspreport
-Content-Security-Policy: script-src 'report-sample' 'nonce-Lqz7s3wg0bWGeXTKNBioUw' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/TranslateApiHttp/cspreport;worker-src 'self'
-Content-Disposition: attachment; filename="json.txt"; filename*=UTF-8''json.txt
-X-Content-Type-Options: nosniff
-X-Frame-Options: SAMEORIGIN
-X-RateLimit-rapid-free-plans-hard-limit-Limit: 500000
-X-RateLimit-rapid-free-plans-hard-limit-Remaining: 499858
-X-RateLimit-rapid-free-plans-hard-limit-Reset: 1916984
-Server: RapidAPI-1.2.8
-X-RapidAPI-Version: 1.2.8
-X-RapidAPI-Region: AWS - ap-southeast-1
-X-RapidAPI-Request-Id: 723fe1e44c37bdfbfec93f3bfd5d1c20362bb4e00852213917baeeca219e3942
-
-[
-    "The mud and mom a Christmas story after the dana"
-]
-English Header:	The mud and mom a Christmas story after the dana
+English Header:	The government of the millionaires
 --------------------------------------------------------------------------------
 Spanish Header:	‘Las tres fronteras’
 Request method:	POST
@@ -417,7 +734,78 @@ Body:
     "to": "en"
 }
 HTTP/1.1 200 OK
-Date: Tue, 24 Dec 2024 12:25:37 GMT
+Date: Wed, 25 Dec 2024 11:44:37 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Encoding: gzip
+Cross-Origin-Resource-Policy: cross-origin
+Pragma: no-cache
+Accept-CH: Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Cross-Origin-Opener-Policy: same-origin
+Permissions-Policy: ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*
+Access-Control-Allow-Origin: *
+X-XSS-Protection: 0
+reporting-endpoints: default="/_/TranslateApiHttp/web-reports?context=eJzjktDikmJw05BicEqfwRoCxH9krrJ6911lFeLmWPpg_W42gROX1oUoKSXlF8aXFCXmFecklqQWpxaVpRbFGxkYmRgaGZrpGVjEFxgAAImoGNI"
+Content-Security-Policy: script-src 'report-sample' 'nonce-7yIi4Vlx3fP19yuOFymsCw' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/TranslateApiHttp/cspreport;worker-src 'self'
+Content-Security-Policy: require-trusted-types-for 'script';report-uri /_/TranslateApiHttp/cspreport
+Content-Disposition: attachment; filename="json.txt"; filename*=UTF-8''json.txt
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-RateLimit-rapid-free-plans-hard-limit-Limit: 500000
+X-RateLimit-rapid-free-plans-hard-limit-Remaining: 499619
+X-RateLimit-rapid-free-plans-hard-limit-Reset: 1833043
+Server: RapidAPI-1.2.8
+X-RapidAPI-Version: 1.2.8
+X-RapidAPI-Region: AWS - ap-southeast-1
+X-RapidAPI-Request-Id: 5e080634a0e9288c185ef6f94f2878d39264430786803a45e566385705332db4
+
+[
+    "The three borders"
+]
+English Header:	The three borders
+--------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="translateArticleHeaders" classname="WebScrapingTest" time="0.0">
+    <skipped message="Method WebScrapingTest.translateArticleHeaders() on instance WebScrapingTest@42c2f48c depends on not successfully finished methods &#10;[WebScrapingTest.scrapeArticles() on instance WebScrapingTest@42c2f48c]"/>
+  </testcase>
+  <testcase name="translateArticleHeaders" classname="WebScrapingTest" time="0.0">
+    <skipped message="Method WebScrapingTest.translateArticleHeaders() on instance WebScrapingTest@6c37bd27 depends on not successfully finished methods &#10;[WebScrapingTest.scrapeArticles() on instance WebScrapingTest@6c37bd27]"/>
+  </testcase>
+  <testcase name="translateArticleHeaders" classname="WebScrapingTest" time="0.0">
+    <skipped message="Method WebScrapingTest.translateArticleHeaders() on instance WebScrapingTest@4fe875be depends on not successfully finished methods &#10;[WebScrapingTest.scrapeArticles() on instance WebScrapingTest@4fe875be]"/>
+  </testcase>
+  <testcase name="translateArticleHeaders" classname="WebScrapingTest" time="2.492">
+    <system-out><![CDATA[
+************* Translated Headers: *************
+
+Spanish Header:	Felipe VI: la exigencia del bien común
+Request method:	POST
+Request URI:	https://ultra-fast-translation.p.rapidapi.com/t
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-RapidAPI-Host=ultra-fast-translation.p.rapidapi.com
+				X-RapidAPI-Key=c2432b444dmsh909f603234f0c69p1a0e09jsne64b3c285be3
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "q": "Felipe VI la exigencia del bien comn",
+    "e": "",
+    "from": "es",
+    "to": "en"
+}
+HTTP/1.1 200 OK
+Date: Wed, 25 Dec 2024 11:46:00 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -429,22 +817,246 @@ Pragma: no-cache
 Accept-CH: Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version
 Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
 Cross-Origin-Opener-Policy: same-origin
-Content-Security-Policy: script-src 'report-sample' 'nonce-bzv3fJfNCfubs6TN64EvZg' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/TranslateApiHttp/cspreport;worker-src 'self'
-Content-Security-Policy: require-trusted-types-for 'script';report-uri /_/TranslateApiHttp/cspreport
-Access-Control-Allow-Origin: *
 Permissions-Policy: ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*
+Access-Control-Allow-Origin: *
+Content-Security-Policy: script-src 'report-sample' 'nonce-IvHOFDTyfj4AmXas2M9tqw' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/TranslateApiHttp/cspreport;worker-src 'self'
+Content-Security-Policy: require-trusted-types-for 'script';report-uri /_/TranslateApiHttp/cspreport
 X-XSS-Protection: 0
-reporting-endpoints: default="/_/TranslateApiHttp/web-reports?context=eJzjktDikmLw1pBicEqfwRoCxH9krrJ6911lFeLhOHhh1W42gRfzr7czKikl5RfGlxQl5hXnJJakFqcWlaUWxRsZGJkYGhma6RlYxBcYAACkuhkp"
+reporting-endpoints: default="/_/TranslateApiHttp/web-reports?context=eJzjktDikmLw1ZBicEqfwRoCxH9krrJ6911lFeLh-PFg_W42gRUbrr5mUlJKyi-MLylKzCvOSSxJLU4tKkstijcyMDIxNDI00zOwiC8wAAC6Nxmr"
 Content-Disposition: attachment; filename="json.txt"; filename*=UTF-8''json.txt
 X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
 X-RateLimit-rapid-free-plans-hard-limit-Limit: 500000
-X-RateLimit-rapid-free-plans-hard-limit-Remaining: 499857
-X-RateLimit-rapid-free-plans-hard-limit-Reset: 1916983
+X-RateLimit-rapid-free-plans-hard-limit-Remaining: 499618
+X-RateLimit-rapid-free-plans-hard-limit-Reset: 1832960
 Server: RapidAPI-1.2.8
 X-RapidAPI-Version: 1.2.8
 X-RapidAPI-Region: AWS - ap-southeast-1
-X-RapidAPI-Request-Id: 7942b469f1d3edff3545d94d58fe8cf215ae640141892b04ea2a99236e4a1ab4
+X-RapidAPI-Request-Id: 55b1a8a2b9d96bc082196ea21672cee83bca666e2c982472338010fd20fa097a
+
+[
+    "Felipe VI the demand for the common good"
+]
+English Header:	Felipe VI the demand for the common good
+--------------------------------------------------------------------------------
+Spanish Header:	El año de Sánchez
+Request method:	POST
+Request URI:	https://ultra-fast-translation.p.rapidapi.com/t
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-RapidAPI-Host=ultra-fast-translation.p.rapidapi.com
+				X-RapidAPI-Key=c2432b444dmsh909f603234f0c69p1a0e09jsne64b3c285be3
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "q": "El ao de Snchez",
+    "e": "",
+    "from": "es",
+    "to": "en"
+}
+HTTP/1.1 200 OK
+Date: Wed, 25 Dec 2024 11:46:01 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Content-Encoding: gzip
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Cross-Origin-Resource-Policy: cross-origin
+Pragma: no-cache
+Accept-CH: Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Cross-Origin-Opener-Policy: same-origin
+Content-Security-Policy: require-trusted-types-for 'script';report-uri /_/TranslateApiHttp/cspreport
+Content-Security-Policy: script-src 'report-sample' 'nonce-p8kmSOr7A7RkKktD46qb9g' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/TranslateApiHttp/cspreport;worker-src 'self'
+Access-Control-Allow-Origin: *
+Permissions-Policy: ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*
+X-XSS-Protection: 0
+reporting-endpoints: default="/_/TranslateApiHttp/web-reports?context=eJzjktDikmLw1pBicEqfwRoCxH9krrJ6911lFeLh-Plg_W42gY5NGxczKikl5RfGlxQl5hXnJJakFqcWlaUWxRsZGJkYGhma6RlYxBcYAACkuRkf"
+Content-Disposition: attachment; filename="json.txt"; filename*=UTF-8''json.txt
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-RateLimit-rapid-free-plans-hard-limit-Limit: 500000
+X-RateLimit-rapid-free-plans-hard-limit-Remaining: 499617
+X-RateLimit-rapid-free-plans-hard-limit-Reset: 1832959
+Server: RapidAPI-1.2.8
+X-RapidAPI-Version: 1.2.8
+X-RapidAPI-Region: AWS - ap-southeast-1
+X-RapidAPI-Request-Id: 14ad7fadf0cf8531ac40ea86581b42d6aa00ab984deaf87c04ed5c7adc3d3f8a
+
+[
+    "The year of Sánchez"
+]
+English Header:	The year of Sánchez
+--------------------------------------------------------------------------------
+Spanish Header:	Lo admito, la Tierra es esférica
+Request method:	POST
+Request URI:	https://ultra-fast-translation.p.rapidapi.com/t
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-RapidAPI-Host=ultra-fast-translation.p.rapidapi.com
+				X-RapidAPI-Key=c2432b444dmsh909f603234f0c69p1a0e09jsne64b3c285be3
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "q": "Lo admito la Tierra es esfrica",
+    "e": "",
+    "from": "es",
+    "to": "en"
+}
+HTTP/1.1 200 OK
+Date: Wed, 25 Dec 2024 11:46:01 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Content-Encoding: gzip
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Cross-Origin-Resource-Policy: cross-origin
+Pragma: no-cache
+Accept-CH: Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Cross-Origin-Opener-Policy: same-origin
+Permissions-Policy: ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*
+Access-Control-Allow-Origin: *
+Content-Security-Policy: script-src 'report-sample' 'nonce-AvPrldq8Qg_WnXXxPpNnkQ' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/TranslateApiHttp/cspreport;worker-src 'self'
+Content-Security-Policy: require-trusted-types-for 'script';report-uri /_/TranslateApiHttp/cspreport
+X-XSS-Protection: 0
+reporting-endpoints: default="/_/TranslateApiHttp/web-reports?context=eJzjktDikmII1JBicEqfwRoCxH9krrJ6911lFeLh-Plg_W42gRer1s9mVlJKyi-MLylKzCvOSSxJLU4tKkstijcyMDIxNDI00zOwiC8wAACzSRl1"
+Content-Disposition: attachment; filename="json.txt"; filename*=UTF-8''json.txt
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-RateLimit-rapid-free-plans-hard-limit-Limit: 500000
+X-RateLimit-rapid-free-plans-hard-limit-Remaining: 499616
+X-RateLimit-rapid-free-plans-hard-limit-Reset: 1832959
+Server: RapidAPI-1.2.8
+X-RapidAPI-Version: 1.2.8
+X-RapidAPI-Region: AWS - ap-southeast-1
+X-RapidAPI-Request-Id: b648e717db46c5b342876bdeba491810e633b6ca9048d4f5983ad305fc3c8b3a
+
+[
+    "I admit it the Earth is spherical"
+]
+English Header:	I admit it the Earth is spherical
+--------------------------------------------------------------------------------
+Spanish Header:	El gobierno de los millonarios
+Request method:	POST
+Request URI:	https://ultra-fast-translation.p.rapidapi.com/t
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-RapidAPI-Host=ultra-fast-translation.p.rapidapi.com
+				X-RapidAPI-Key=c2432b444dmsh909f603234f0c69p1a0e09jsne64b3c285be3
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "q": "El gobierno de los millonarios",
+    "e": "",
+    "from": "es",
+    "to": "en"
+}
+HTTP/1.1 200 OK
+Date: Wed, 25 Dec 2024 11:46:02 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Content-Encoding: gzip
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Cross-Origin-Resource-Policy: cross-origin
+Pragma: no-cache
+Accept-CH: Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Cross-Origin-Opener-Policy: same-origin
+Permissions-Policy: ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*
+Access-Control-Allow-Origin: *
+Content-Security-Policy: script-src 'report-sample' 'nonce-iY4gt_3-bLIIeQA-V8itFQ' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/TranslateApiHttp/cspreport;worker-src 'self'
+Content-Security-Policy: require-trusted-types-for 'script';report-uri /_/TranslateApiHttp/cspreport
+X-XSS-Protection: 0
+reporting-endpoints: default="/_/TranslateApiHttp/web-reports?context=eJzjktDikmJw0ZBicEqfwRoCxH9krrJ6911lFeLh-PVg_W42gRPr981gVFJKyi-MLylKzCvOSSxJLU4tKkstijcyMDIxNDI00zOwiC8wAACtHxlY"
+Content-Disposition: attachment; filename="json.txt"; filename*=UTF-8''json.txt
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-RateLimit-rapid-free-plans-hard-limit-Limit: 500000
+X-RateLimit-rapid-free-plans-hard-limit-Remaining: 499615
+X-RateLimit-rapid-free-plans-hard-limit-Reset: 1832958
+Server: RapidAPI-1.2.8
+X-RapidAPI-Version: 1.2.8
+X-RapidAPI-Region: AWS - ap-southeast-1
+X-RapidAPI-Request-Id: 987ead103b672a635bd927f3777854382465332e398229960ed71c9594abed00
+
+[
+    "The government of the millionaires"
+]
+English Header:	The government of the millionaires
+--------------------------------------------------------------------------------
+Spanish Header:	‘Las tres fronteras’
+Request method:	POST
+Request URI:	https://ultra-fast-translation.p.rapidapi.com/t
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-RapidAPI-Host=ultra-fast-translation.p.rapidapi.com
+				X-RapidAPI-Key=c2432b444dmsh909f603234f0c69p1a0e09jsne64b3c285be3
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "q": "Las tres fronteras",
+    "e": "",
+    "from": "es",
+    "to": "en"
+}
+HTTP/1.1 200 OK
+Date: Wed, 25 Dec 2024 11:46:02 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Content-Encoding: gzip
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Cross-Origin-Resource-Policy: cross-origin
+Pragma: no-cache
+Accept-CH: Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Cross-Origin-Opener-Policy: same-origin
+Content-Security-Policy: require-trusted-types-for 'script';report-uri /_/TranslateApiHttp/cspreport
+Content-Security-Policy: script-src 'report-sample' 'nonce-ioppWVBlnH4FnOtBqd4B7A' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/TranslateApiHttp/cspreport;worker-src 'self'
+Access-Control-Allow-Origin: *
+Permissions-Policy: ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*
+X-XSS-Protection: 0
+reporting-endpoints: default="/_/TranslateApiHttp/web-reports?context=eJzjktDikmII1JBicEqfwRoCxH9krrJ6911lFeLh-PVg_W42gYYNU14zKSkl5RfGlxQl5hXnJJakFqcWlaUWxRsZGJkYGhma6RlYxBcYAACrXhlI"
+Content-Disposition: attachment; filename="json.txt"; filename*=UTF-8''json.txt
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-RateLimit-rapid-free-plans-hard-limit-Limit: 500000
+X-RateLimit-rapid-free-plans-hard-limit-Remaining: 499614
+X-RateLimit-rapid-free-plans-hard-limit-Reset: 1832958
+Server: RapidAPI-1.2.8
+X-RapidAPI-Version: 1.2.8
+X-RapidAPI-Region: AWS - ap-southeast-1
+X-RapidAPI-Request-Id: 8a2a23228644b75df44b45ba24e77fd0835de6346b0bdadbed728c5df431e180
 
 [
     "The three borders"
@@ -453,9 +1065,31 @@ English Header:	The three borders
 --------------------------------------------------------------------------------
 ]]></system-out>
   </testcase>
-  <testcase name="analyseTranslatedHeaders" classname="WebScrapingTest" time="0.115">
-    <system-out><![CDATA[Combined headers in a string:	 the year of sánchez decarbonization slows down fog at night the mud and mom a christmas story after the dana the three borders 
-Repeated Word:	the	Occurrence:	4
+  <testcase name="analyseTranslatedHeaders" classname="WebScrapingTest" time="0.0">
+    <skipped message="Method WebScrapingTest.analyseTranslatedHeaders() on instance WebScrapingTest@15923407 depends on not successfully finished methods &#10;[WebScrapingTest.translateArticleHeaders() on instance WebScrapingTest@15923407]"/>
+  </testcase>
+  <testcase name="analyseTranslatedHeaders" classname="WebScrapingTest" time="0.037">
+    <system-out><![CDATA[Combined headers in a string:	 felipe vi the demand for the common good the year of sánchez i admit it the earth is spherical the government of the millionaires the three borders 
+Repeated Word:	the	Occurrence:	7
+Repeated Word:	of	Occurrence:	2
 ]]></system-out>
+  </testcase>
+  <testcase name="analyseTranslatedHeaders" classname="WebScrapingTest" time="0.0">
+    <skipped message="Method WebScrapingTest.analyseTranslatedHeaders() on instance WebScrapingTest@42c2f48c depends on not successfully finished methods &#10;[WebScrapingTest.translateArticleHeaders() on instance WebScrapingTest@42c2f48c]"/>
+  </testcase>
+  <testcase name="analyseTranslatedHeaders" classname="WebScrapingTest" time="0.0">
+    <skipped message="Method WebScrapingTest.analyseTranslatedHeaders() on instance WebScrapingTest@6c37bd27 depends on not successfully finished methods &#10;[WebScrapingTest.translateArticleHeaders() on instance WebScrapingTest@6c37bd27]"/>
+  </testcase>
+  <testcase name="analyseTranslatedHeaders" classname="WebScrapingTest" time="0.0">
+    <skipped message="Method WebScrapingTest.analyseTranslatedHeaders() on instance WebScrapingTest@4fe875be depends on not successfully finished methods &#10;[WebScrapingTest.translateArticleHeaders() on instance WebScrapingTest@4fe875be]"/>
+  </testcase>
+  <testcase name="analyseTranslatedHeaders" classname="WebScrapingTest" time="0.039">
+    <system-out><![CDATA[Combined headers in a string:	 felipe vi the demand for the common good the year of sánchez i admit it the earth is spherical the government of the millionaires the three borders 
+Repeated Word:	the	Occurrence:	7
+Repeated Word:	of	Occurrence:	2
+]]></system-out>
+  </testcase>
+  <testcase name="closeBrowser" classname="WebScrapingTest" time="0.0">
+    <skipped/>
   </testcase>
 </testsuite>

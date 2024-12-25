@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>WebScraping Tests-2</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/2</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Dec 24 17:34:33 IST 2024</td>
+<td>Started on:</td><td>Wed Dec 25 15:47:46 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>38 seconds (38343 ms)</td>
+<tr><td>Total time:</td><td>85 seconds (85508 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,24 +76,44 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='WebScrapingTest.acceptWebsiteNotice()'><b>acceptWebsiteNotice</b><br>Test class: WebScrapingTest</td>
-<td><div><pre>java.lang.AssertionError: Assertion Failed:
-Expected:	about:///	but found:	https://elpais.com/ expected [https://elpais.com/] but found [about:///]
-	at WebScrapingTest.acceptWebsiteNotice(WebScrapingTest.java:46)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+<td title='WebScrapingTest.scrapeArticles()'><b>scrapeArticles</b><br>Test class: WebScrapingTest<br>Test method: Scrape Articles from the Opinion Section</td>
+<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [94461ddd8ae18e0f67815b6b6ec9b99cb46e02e7, clickElement [id]]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0, moz:accessibilityChecks: false, moz:buildID: 20241121140525, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 11100, moz:profile: C:\Windows\proxy\rust_mozpr..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, optimalHubUrl: hub-aps.browserstack.com, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10...., webdriver.remote.sessionid: 94461ddd8ae18e0f67815b6b6ec...}
+Element: [[ChromeDriver: firefox on windows (94461ddd8ae18e0f67815b6b6ec9b99cb46e02e7)] -&gt; xpath: //div[@id=&apos;csw&apos;]/div[1] //a[contains(@href, &apos;https://elpais.com/opinion/&apos;)]]
+Session ID: 94461ddd8ae18e0f67815b6b6ec9b99cb46e02e7
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at WebScrapingTest.scrapeArticles(WebScrapingTest.java:138)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1565599314", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1565599314'><pre>java.lang.AssertionError: Assertion Failed:
-Expected:	about:///	but found:	https://elpais.com/ expected [https://elpais.com/] but found [about:///]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at WebScrapingTest.acceptWebsiteNotice(WebScrapingTest.java:46)
+Caused by: java.lang.IllegalArgumentException: Unable to find mapping for {value={message=Session not started or terminated}, sessionId=, status=13}
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:152)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	... 21 more
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace556430265", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace556430265'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [94461ddd8ae18e0f67815b6b6ec9b99cb46e02e7, clickElement [id]]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0, moz:accessibilityChecks: false, moz:buildID: 20241121140525, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 11100, moz:profile: C:\Windows\proxy\rust_mozpr..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, optimalHubUrl: hub-aps.browserstack.com, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10...., webdriver.remote.sessionid: 94461ddd8ae18e0f67815b6b6ec...}
+Element: [[ChromeDriver: firefox on windows (94461ddd8ae18e0f67815b6b6ec9b99cb46e02e7)] -&gt; xpath: //div[@id=&apos;csw&apos;]/div[1] //a[contains(@href, &apos;https://elpais.com/opinion/&apos;)]]
+Session ID: 94461ddd8ae18e0f67815b6b6ec9b99cb46e02e7
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at WebScrapingTest.scrapeArticles(WebScrapingTest.java:138)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -106,56 +126,22 @@ Expected:	about:///	but found:	https://elpais.com/ expected [https://elpais.com/
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.lang.IllegalArgumentException: Unable to find mapping for {value={message=Session not started or terminated}, sessionId=, status=13}
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:152)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	... 21 more
 </pre></div></td>
 <td>0</td>
-<td>WebScrapingTest@4d8126f</td></tr>
-<tr>
-<td title='WebScrapingTest.analyseTranslatedHeaders()'><b>analyseTranslatedHeaders</b><br>Test class: WebScrapingTest</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.isEmpty()&quot; because &quot;this.translatedHeaders&quot; is null
-	at WebScrapingTest.analyseTranslatedHeaders(WebScrapingTest.java:156)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace129066074", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace129066074'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.isEmpty()&quot; because &quot;this.translatedHeaders&quot; is null
-	at WebScrapingTest.analyseTranslatedHeaders(WebScrapingTest.java:156)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-</pre></div></td>
-<td>0</td>
-<td>WebScrapingTest@4d8126f</td></tr>
+<td>WebScrapingTest@74971ed9</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -166,25 +152,72 @@ Expected:	about:///	but found:	https://elpais.com/ expected [https://elpais.com/
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='WebScrapingTest.verifyLanguage()'><b>verifyLanguage</b><br>Test class: WebScrapingTest</td>
+<td title='WebScrapingTest.navigateToWebsite()'><b>navigateToWebsite</b><br>Test class: WebScrapingTest<br>Test method: Visit the website El País, a Spanish news outlet.</td>
 <td></td>
+<td>41</td>
+<td>WebScrapingTest@74971ed9</td></tr>
+<tr>
+<td title='WebScrapingTest.verifyLanguage()'><b>verifyLanguage</b><br>Test class: WebScrapingTest<br>Test method: Ensure that the website's text is displayed in Spanish.</td>
+<td></td>
+<td>3</td>
+<td>WebScrapingTest@74971ed9</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='WebScrapingTest.translateArticleHeaders()'><b>translateArticleHeaders</b><br>Test class: WebScrapingTest<br>Test method: Translate Article Headers</td>
+<td><div><pre>java.lang.Throwable: Method WebScrapingTest.translateArticleHeaders() on instance WebScrapingTest@74971ed9 depends on not successfully finished methods 
+[WebScrapingTest.scrapeArticles() on instance WebScrapingTest@74971ed9]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace233679048", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace233679048'><pre>java.lang.Throwable: Method WebScrapingTest.translateArticleHeaders() on instance WebScrapingTest@74971ed9 depends on not successfully finished methods 
+[WebScrapingTest.scrapeArticles() on instance WebScrapingTest@74971ed9]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
 <td>0</td>
-<td>WebScrapingTest@4d8126f</td></tr>
+<td>WebScrapingTest@74971ed9</td></tr>
 <tr>
-<td title='WebScrapingTest.scrapeArticles()'><b>scrapeArticles</b><br>Test class: WebScrapingTest</td>
-<td></td>
-<td>7</td>
-<td>WebScrapingTest@4d8126f</td></tr>
-<tr>
-<td title='WebScrapingTest.navigateToWebsite()'><b>navigateToWebsite</b><br>Test class: WebScrapingTest</td>
-<td></td>
-<td>6</td>
-<td>WebScrapingTest@4d8126f</td></tr>
-<tr>
-<td title='WebScrapingTest.translateArticleHeaders()'><b>translateArticleHeaders</b><br>Test class: WebScrapingTest</td>
-<td></td>
-<td>2</td>
-<td>WebScrapingTest@4d8126f</td></tr>
+<td title='WebScrapingTest.analyseTranslatedHeaders()'><b>analyseTranslatedHeaders</b><br>Test class: WebScrapingTest<br>Test method: Analyze Translated Headers</td>
+<td><div><pre>java.lang.Throwable: Method WebScrapingTest.analyseTranslatedHeaders() on instance WebScrapingTest@74971ed9 depends on not successfully finished methods 
+[WebScrapingTest.translateArticleHeaders() on instance WebScrapingTest@74971ed9]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace338937950", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace338937950'><pre>java.lang.Throwable: Method WebScrapingTest.analyseTranslatedHeaders() on instance WebScrapingTest@74971ed9 depends on not successfully finished methods 
+[WebScrapingTest.translateArticleHeaders() on instance WebScrapingTest@74971ed9]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
+<td>0</td>
+<td>WebScrapingTest@74971ed9</td></tr>
 </table><p>
 </body>
 </html>

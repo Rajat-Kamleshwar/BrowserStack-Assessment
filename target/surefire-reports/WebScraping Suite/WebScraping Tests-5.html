@@ -1,0 +1,331 @@
+<html>
+<head>
+<title>TestNG:  WebScraping Tests-5</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>WebScraping Tests-5</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/5</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Dec 25 17:13:45 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>17 seconds (17391 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='WebScrapingTest.setup()'><b>setup</b><br>Test class: WebScrapingTest</td>
+<td><div><pre>org.openqa.selenium.UnsupportedCommandException: unsupported operation: Unable to maximize window on Android platform
+  (Session info: chrome=128.0.6613.146)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e7951530d8f68ec1a36a65eb2cb8c86aeb3ee7cf, maximizeCurrentWindow {}]
+Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: chrome, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18082, databaseEnabled: false, desired: {browserName: chrome, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18082, deviceName: android, goog:chromeOptions: {args: [--disable-extensions, --remote-allow-origins=*, --proxy-bypass-list=&lt;-loopb..., test-type, --proxy-server=http://185.2..., --disable-features=Translate]}, newCommandTimeout: 0, platformName: Android, skipServerInstallation: true, systemPort: 8202, udid: RZCW127QX4T}, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-S918B, deviceName: RZCW127QX4T, deviceScreenDensity: 450, deviceScreenSize: 1080x2316, deviceUDID: RZCW127QX4T, goog:chromeOptions: {args: [--disable-extensions, --remote-allow-origins=*, --proxy-bypass-list=&lt;-loopb..., test-type, --proxy-server=http://185.2..., --disable-features=Translate]}, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 0, optimalHubUrl: hub-aps.browserstack.com, pixelRatio: 2.8125, platform: LINUX, platformName: ANDROID, platformVersion: 13, skipServerInstallation: true, statBarHeight: 75, systemPort: 8202, takesScreenshot: true, udid: RZCW127QX4T, viewportRect: {height: 2031, left: 0, top: 75, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: e7951530d8f68ec1a36a65eb2cb8c86aeb3ee7cf
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1061)
+	at WebScrapingTest.setup(WebScrapingTest.java:29)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1638660184", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1638660184'><pre>org.openqa.selenium.UnsupportedCommandException: unsupported operation: Unable to maximize window on Android platform
+  (Session info: chrome=128.0.6613.146)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e7951530d8f68ec1a36a65eb2cb8c86aeb3ee7cf, maximizeCurrentWindow {}]
+Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: chrome, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18082, databaseEnabled: false, desired: {browserName: chrome, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18082, deviceName: android, goog:chromeOptions: {args: [--disable-extensions, --remote-allow-origins=*, --proxy-bypass-list=&lt;-loopb..., test-type, --proxy-server=http://185.2..., --disable-features=Translate]}, newCommandTimeout: 0, platformName: Android, skipServerInstallation: true, systemPort: 8202, udid: RZCW127QX4T}, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-S918B, deviceName: RZCW127QX4T, deviceScreenDensity: 450, deviceScreenSize: 1080x2316, deviceUDID: RZCW127QX4T, goog:chromeOptions: {args: [--disable-extensions, --remote-allow-origins=*, --proxy-bypass-list=&lt;-loopb..., test-type, --proxy-server=http://185.2..., --disable-features=Translate]}, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 0, optimalHubUrl: hub-aps.browserstack.com, pixelRatio: 2.8125, platform: LINUX, platformName: ANDROID, platformVersion: 13, skipServerInstallation: true, statBarHeight: 75, systemPort: 8202, takesScreenshot: true, udid: RZCW127QX4T, viewportRect: {height: 2031, left: 0, top: 75, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: e7951530d8f68ec1a36a65eb2cb8c86aeb3ee7cf
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1061)
+	at WebScrapingTest.setup(WebScrapingTest.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
+<td>17</td>
+<td>WebScrapingTest@15923407</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='WebScrapingTest.closeBrowser()'><b>closeBrowser</b><br>Test class: WebScrapingTest</td>
+<td></td>
+<td>0</td>
+<td>WebScrapingTest@15923407</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='WebScrapingTest.scrapeArticles()'><b>scrapeArticles</b><br>Test class: WebScrapingTest<br>Test method: Scrape Articles from the Opinion Section</td>
+<td><div><pre>java.lang.Throwable: Method WebScrapingTest.scrapeArticles() on instance WebScrapingTest@15923407 depends on not successfully finished methods 
+[WebScrapingTest.verifyLanguage() on instance WebScrapingTest@15923407]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2062689424", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2062689424'><pre>java.lang.Throwable: Method WebScrapingTest.scrapeArticles() on instance WebScrapingTest@15923407 depends on not successfully finished methods 
+[WebScrapingTest.verifyLanguage() on instance WebScrapingTest@15923407]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
+<td>0</td>
+<td>WebScrapingTest@15923407</td></tr>
+<tr>
+<td title='WebScrapingTest.analyseTranslatedHeaders()'><b>analyseTranslatedHeaders</b><br>Test class: WebScrapingTest<br>Test method: Analyze Translated Headers</td>
+<td><div><pre>java.lang.Throwable: Method WebScrapingTest.analyseTranslatedHeaders() on instance WebScrapingTest@15923407 depends on not successfully finished methods 
+[WebScrapingTest.translateArticleHeaders() on instance WebScrapingTest@15923407]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1359148113", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1359148113'><pre>java.lang.Throwable: Method WebScrapingTest.analyseTranslatedHeaders() on instance WebScrapingTest@15923407 depends on not successfully finished methods 
+[WebScrapingTest.translateArticleHeaders() on instance WebScrapingTest@15923407]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
+<td>0</td>
+<td>WebScrapingTest@15923407</td></tr>
+<tr>
+<td title='WebScrapingTest.navigateToWebsite()'><b>navigateToWebsite</b><br>Test class: WebScrapingTest<br>Test method: Visit the website El País, a Spanish news outlet.</td>
+<td><div><pre>org.openqa.selenium.UnsupportedCommandException: unsupported operation: Unable to maximize window on Android platform
+  (Session info: chrome=128.0.6613.146)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e7951530d8f68ec1a36a65eb2cb8c86aeb3ee7cf, maximizeCurrentWindow {}]
+Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: chrome, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18082, databaseEnabled: false, desired: {browserName: chrome, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18082, deviceName: android, goog:chromeOptions: {args: [--disable-extensions, --remote-allow-origins=*, --proxy-bypass-list=&lt;-loopb..., test-type, --proxy-server=http://185.2..., --disable-features=Translate]}, newCommandTimeout: 0, platformName: Android, skipServerInstallation: true, systemPort: 8202, udid: RZCW127QX4T}, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-S918B, deviceName: RZCW127QX4T, deviceScreenDensity: 450, deviceScreenSize: 1080x2316, deviceUDID: RZCW127QX4T, goog:chromeOptions: {args: [--disable-extensions, --remote-allow-origins=*, --proxy-bypass-list=&lt;-loopb..., test-type, --proxy-server=http://185.2..., --disable-features=Translate]}, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 0, optimalHubUrl: hub-aps.browserstack.com, pixelRatio: 2.8125, platform: LINUX, platformName: ANDROID, platformVersion: 13, skipServerInstallation: true, statBarHeight: 75, systemPort: 8202, takesScreenshot: true, udid: RZCW127QX4T, viewportRect: {height: 2031, left: 0, top: 75, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: e7951530d8f68ec1a36a65eb2cb8c86aeb3ee7cf
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1061)
+	at WebScrapingTest.setup(WebScrapingTest.java:29)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace941581530", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace941581530'><pre>org.openqa.selenium.UnsupportedCommandException: unsupported operation: Unable to maximize window on Android platform
+  (Session info: chrome=128.0.6613.146)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e7951530d8f68ec1a36a65eb2cb8c86aeb3ee7cf, maximizeCurrentWindow {}]
+Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: chrome, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18082, databaseEnabled: false, desired: {browserName: chrome, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18082, deviceName: android, goog:chromeOptions: {args: [--disable-extensions, --remote-allow-origins=*, --proxy-bypass-list=&lt;-loopb..., test-type, --proxy-server=http://185.2..., --disable-features=Translate]}, newCommandTimeout: 0, platformName: Android, skipServerInstallation: true, systemPort: 8202, udid: RZCW127QX4T}, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-S918B, deviceName: RZCW127QX4T, deviceScreenDensity: 450, deviceScreenSize: 1080x2316, deviceUDID: RZCW127QX4T, goog:chromeOptions: {args: [--disable-extensions, --remote-allow-origins=*, --proxy-bypass-list=&lt;-loopb..., test-type, --proxy-server=http://185.2..., --disable-features=Translate]}, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 0, optimalHubUrl: hub-aps.browserstack.com, pixelRatio: 2.8125, platform: LINUX, platformName: ANDROID, platformVersion: 13, skipServerInstallation: true, statBarHeight: 75, systemPort: 8202, takesScreenshot: true, udid: RZCW127QX4T, viewportRect: {height: 2031, left: 0, top: 75, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: e7951530d8f68ec1a36a65eb2cb8c86aeb3ee7cf
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1061)
+	at WebScrapingTest.setup(WebScrapingTest.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
+<td>0</td>
+<td>WebScrapingTest@15923407</td></tr>
+<tr>
+<td title='WebScrapingTest.translateArticleHeaders()'><b>translateArticleHeaders</b><br>Test class: WebScrapingTest<br>Test method: Translate Article Headers</td>
+<td><div><pre>java.lang.Throwable: Method WebScrapingTest.translateArticleHeaders() on instance WebScrapingTest@15923407 depends on not successfully finished methods 
+[WebScrapingTest.scrapeArticles() on instance WebScrapingTest@15923407]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1387320024", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1387320024'><pre>java.lang.Throwable: Method WebScrapingTest.translateArticleHeaders() on instance WebScrapingTest@15923407 depends on not successfully finished methods 
+[WebScrapingTest.scrapeArticles() on instance WebScrapingTest@15923407]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
+<td>0</td>
+<td>WebScrapingTest@15923407</td></tr>
+<tr>
+<td title='WebScrapingTest.verifyLanguage()'><b>verifyLanguage</b><br>Test class: WebScrapingTest<br>Test method: Ensure that the website's text is displayed in Spanish.</td>
+<td><div><pre>java.lang.Throwable: Method WebScrapingTest.verifyLanguage() on instance WebScrapingTest@15923407 depends on not successfully finished methods 
+[WebScrapingTest.navigateToWebsite() on instance WebScrapingTest@15923407]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace743521725", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace743521725'><pre>java.lang.Throwable: Method WebScrapingTest.verifyLanguage() on instance WebScrapingTest@15923407 depends on not successfully finished methods 
+[WebScrapingTest.navigateToWebsite() on instance WebScrapingTest@15923407]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
+<td>0</td>
+<td>WebScrapingTest@15923407</td></tr>
+</table><p>
+</body>
+</html>

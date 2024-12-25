@@ -1,18 +1,37 @@
 userName: rajatkamleshwar_D20P7i
 accessKey: wPz6AqoqTxQaCp7jAkP1
+
 platforms:
   - os: Windows
     osVersion: 10
     browserName: Chrome
     browserVersion: 131.0
   - os: OS X
-    osVersion: Monterey
+    osVersion: Sonoma
     browserName: Safari
-    browserVersion: 15.6
-  - deviceName: iPhone 13
-    osVersion: 15
-    browserName: Chromium
+    browserVersion: 17.3
+  - os: Windows
+    osVersion: 10
+    browserName: Firefox
+    browserVersion: 133.0
+  - os: Windows
+    osVersion: 11
+    browserName: Edge
+    browserVersion: 131.0
+  - deviceName: iPhone 15
+    platform: iOS
+    osVersion: 17
+    browserName: Safari
     deviceOrientation: portrait
+  - deviceName: Samsung Galaxy S23 Ultra
+    osVersion: 13.0
+    browserName: chrome
+    deviceOrientation: portrait
+
 browserstackLocal: true
-buildName: browserstack-build-1
-projectName: BrowserStack Sample
+buildName: browserstack-testBuild
+projectName: BrowserStack WebScraping Assessment
+buildIdentifier: ${DATE_TIME}
+debug: true
+networkLogs: true
+consoleLogs: info

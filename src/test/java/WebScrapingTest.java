@@ -1,5 +1,5 @@
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
+import org.openqa.selenium.remote.Browser;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -7,6 +7,9 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.util.*;
+import java.util.NoSuchElementException;
+
+import static org.openqa.selenium.remote.Browser.SAFARI;
 
 public class WebScrapingTest extends DriverManagerUtil {
 
@@ -14,13 +17,14 @@ public class WebScrapingTest extends DriverManagerUtil {
     RestAssuredUtil restAssuredUtil;
     List<String> headersToTranslate;
     List<String> translatedHeaders;
+    String url, browser = "Chrome", platform = "WEB";
 
 
     @BeforeClass
     public void setup(){
         // Initialize Driver
-        driver = driverInitialization("Chrome");
-        String url = properties.getProperty("URL");
+        driver = driverInitialization(browser, platform);    // BrowserName: For Local Execution
+        url = properties.getProperty("URL");
         driver.navigate().to(url);
         driver.manage().window().maximize();
         System.out.println("Navigated to: " + url);
@@ -28,18 +32,47 @@ public class WebScrapingTest extends DriverManagerUtil {
 
     @Test(priority = 1, description = "Visit the website El País, a Spanish news outlet.")
     public void navigateToWebsite(){
-        // Wait until website notice is displayed and accept the notice
+        Assert.assertTrue(Objects.requireNonNull(driver.getCurrentUrl()).contains(properties.getProperty("URL")));
+        WebElement acceptBtn;
+        boolean elementFound = false;
+        // Adding explicit sleep wait here, wait until website notice is displayed and accept the notice
         try {
-            wait.until(ExpectedConditions.elementToBeClickable(driver.findElement
-                    (By.xpath("//div[@data-testid = 'notice']"))));
+            Thread.sleep(10000);
+        } catch (InterruptedException i){
+            System.out.println(i.getMessage());
+        }
+        List<WebElement> noticeLocator1 = driver.findElements(By.xpath("//div[@class='pmConsentWall-content']"));
+        List<WebElement> noticeLocator2 = driver.findElements(By.xpath("//div[@data-testid = 'notice']"));
+        // Check if the following component is visible within Mobile View or not, if not proceed with existing logic,
+        // adding this additional logic because the notice elements are different in Browser mWeb and BrowserStack
+        // mWeb. Hence, handled both element conditions to continue script execution with whatever element is displayed
 
-            WebElement acceptBtn = driver.findElement(By.xpath("//button[@id='didomi-notice-agree-button']"));
-            wait.until(ExpectedConditions.elementToBeClickable(acceptBtn));
-            acceptBtn.click();
-        } catch (NoSuchElementException e){
-            e.printStackTrace();
-        } finally {
-            Assert.assertTrue(Objects.requireNonNull(driver.getCurrentUrl()).contains(properties.getProperty("URL")));
+        try {
+            if (!noticeLocator1.isEmpty() && noticeLocator1.get(0).isDisplayed() && noticeLocator1.get(0).isEnabled()){
+                acceptBtn = driver.findElement(By.xpath("//div[@class='pmConsentWall-col'][1] //div/following-sibling::a"));
+                wait.until(ExpectedConditions.elementToBeClickable(acceptBtn));
+                acceptBtn.click();
+                elementFound = true;
+                System.out.println("Clicked on m-WEB Notice!");
+            }
+        } catch (NoSuchElementException nse) {
+            nse.printStackTrace();
+        }
+        if (!elementFound) {
+            try {
+                if (!noticeLocator2.isEmpty() && noticeLocator2.get(0).isDisplayed() && noticeLocator2.get(0).isEnabled()) {
+                    acceptBtn = driver.findElement(By.xpath("//button[@id='didomi-notice-agree-button']"));
+                    wait.until(ExpectedConditions.elementToBeClickable(acceptBtn));
+                    acceptBtn.click();
+                    elementFound = true;
+                    System.out.println("Clicked on WEB Notice!");
+                }
+            } catch (NoSuchElementException nse1) {
+                System.out.println(nse1.getMessage());
+            }
+        }
+        if (!elementFound) {
+            System.out.println("Neither mWEB nor WEB notice element is displayed!");
         }
     }
 
@@ -47,8 +80,46 @@ public class WebScrapingTest extends DriverManagerUtil {
             description = "Ensure that the website's text is displayed in Spanish.",
             dependsOnMethods = "navigateToWebsite")
     public void verifyLanguage(){
-        WebElement languageEle = driver.findElement
-                (By.xpath("//time[contains(@id, 'header')]/parent::div/div //ul/li[1] //span"));
+        WebElement languageEle = null;
+
+//        List<WebElement> hamburgerMenu = driver.findElements(By.xpath("//button[@id='btn_open_hamburger']"));
+//        List<WebElement> noticeLocator1 = driver.findElements(By.xpath("//div[contains(@data-dtm-region, 'header_hamburguesa_edicion')] //ul/li/a[@href='https://elpais.com']"));
+//        List<WebElement> noticeLocator2 = driver.findElements(By.xpath("//time[contains(@id, 'header')]/parent::div/div //ul/li[1] //span"));
+//
+//        if (!hamburgerMenu.isEmpty() && hamburgerMenu.get(0).isDisplayed() && hamburgerMenu.get(0).isEnabled()){
+//            wait.until(ExpectedConditions.elementToBeClickable(hamburgerMenu.get(0)));
+//            hamburgerMenu.get(0).click();
+//            try {
+//                if (!noticeLocator1.isEmpty() && noticeLocator1.get(0).isDisplayed() && noticeLocator1.get(0).isEnabled()){
+//                    languageEle = noticeLocator1.get(0);
+//                }
+//            } catch (NoSuchElementException nse) {
+//                System.out.println(nse.getMessage());
+//            }
+//        } else {
+//            try {
+//                if (!noticeLocator2.isEmpty() && noticeLocator2.get(0).isDisplayed() && noticeLocator2.get(0).isEnabled()) {
+//                    languageEle = noticeLocator2.get(0);
+//                }
+//            } catch (NoSuchElementException nse1) {
+//                System.out.println(nse1.getMessage());
+//            }
+//        }
+
+            // Click on Hamburger menu and proceed with validations
+
+            WebElement hamburgerMenu = driver.findElement(By.xpath("//button[@id='btn_open_hamburger']"));
+            try {
+                wait.until(ExpectedConditions.elementToBeClickable(hamburgerMenu));
+                hamburgerMenu.click();
+            } catch (NoSuchElementException ne){
+                throw new NoSuchElementException(ne.getMessage());
+            }
+
+        // Language Text
+            languageEle = driver.findElement(By.xpath
+                    ("//div[contains(@data-dtm-region, 'header_hamburguesa_edicion')] //ul/li/a[@href='https://elpais.com']"));
+
         // Assert default language is Spanish
         boolean flag = false;
         if (flag == Objects.equals(languageEle.getText(), System.getProperty("Spanish"))){
@@ -71,18 +142,44 @@ public class WebScrapingTest extends DriverManagerUtil {
             If available, download and save the cover image of each article to your local machine.
         */
 
-        List<WebElement> opinionOpt = driver.findElements
-                (By.xpath("//div[@id='csw']/div[1] //div/a"));
+        List<WebElement> opinionOpt;
+        // Choose the Opinion option from hamburger menu and click on it
+        opinionOpt = driver.findElements
+                    (By.xpath("//div[@id='hamburger_container'] //nav/div[1]/ul/li/a"));
         for (WebElement e : opinionOpt){
             if (e.getText().equalsIgnoreCase(properties.getProperty("OpinionSection"))){
-                e.click();
+                try {
+                    wait.until(ExpectedConditions.elementToBeClickable(e));
+                    e.click();
+                    wait.until(ExpectedConditions.urlToBe(url + "opinion/"));
+                } catch (ElementNotInteractableException excp){
+                    throw new ElementNotInteractableException(excp.getMessage());
+                }
                 break;
             }
         }
 
-        System.out.println("Articles scraped from Opinion section!:\n");
-        List<WebElement> articles = driver.findElements
-                (By.xpath("//div[@id='csw']/parent::header/parent::header/following-sibling::main/div[1] //article"));
+        System.out.println("Opinion option clicked:\n");
+
+        // Explicit timeout for Safari Browser as DOM loading is often delayed and unreliable
+        if (browser.equalsIgnoreCase("Safari")){
+            try {
+                Thread.sleep(10000);
+            } catch (InterruptedException i){
+                System.out.println(i.getMessage());
+            }
+        }
+
+        // Wait until articles are visible on page
+        try {
+            wait.until(ExpectedConditions.visibilityOfAllElements(
+                    driver.findElements
+                            (By.xpath
+                                    ("//div[@id='csw']/parent::header/parent::header/following-sibling::main/div[1] //article"))));
+        } catch (NoSuchElementException e){
+            throw new NoSuchElementException(e.getMessage());
+        }
+
         List<WebElement> articleHeader = driver.findElements
                 (By.xpath("//div[@id='csw']/parent::header/parent::header/following-sibling::main/div[1] " +
                         "//article/header/h2"));
@@ -91,11 +188,14 @@ public class WebScrapingTest extends DriverManagerUtil {
                         "//article/p"));
         List<WebElement> articleImage = driver.findElements
                 (By.xpath("//div[@id='csw']/parent::header/parent::header/following-sibling::main/div[1] " +
-                        "//article/figure //img"));
+                        "//article/figure //a[contains(@href, '" + url + "')]/img"));
+
+        System.out.println("Articles scraped from Opinion section!:\n");
 
         imageSaveUtil = new ImageSaveUtil();
         imageSaveUtil.emptyDirectory();
         headersToTranslate = new ArrayList<>();
+
         int top5 = 0;
             while (top5 < 5){
                 // Print the Article Header
@@ -104,8 +204,17 @@ public class WebScrapingTest extends DriverManagerUtil {
                 // Print the Article Content
                 System.out.println("Article Content:\t" + articleContent.get(top5).getText());
                 // Save article image if any
-                imageSaveUtil.saveImageFromWebsite(articleImage);
+                try {
+                    wait.until(ExpectedConditions.visibilityOfAllElements(articleImage));
+                    imageSaveUtil.saveImageFromWebsite(articleImage);
+                } catch (StaleElementReferenceException s){
+                    throw new StaleElementReferenceException(s.getMessage());
+                }
                 top5++;
+                // Perform Scroll
+                    JavascriptExecutor js = (JavascriptExecutor) driver;
+                    js.executeScript("window.scrollBy(0,250)", "");
+
                 System.out.println("\n*********************************************************\n");
             }
     }

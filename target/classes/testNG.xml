@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="WebScraping Suite">
+<suite name="WebScraping Suite" parallel = "true" thread-count = "5">
     <test name="WebScraping Tests">
         <classes>
             <class name="WebScrapingTest" />

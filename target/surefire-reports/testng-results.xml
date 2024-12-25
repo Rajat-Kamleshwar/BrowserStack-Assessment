@@ -1,41 +1,699 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="30" passed="13" failed="3" skipped="14">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-24T17:54:45 IST" name="WebScraping Suite" finished-at="2024-12-24T17:55:39 IST" duration-ms="54486">
+  <suite started-at="2024-12-25T17:13:45 IST" name="WebScraping Suite" finished-at="2024-12-25T17:16:05 IST" duration-ms="139436">
     <groups>
     </groups>
-    <test started-at="2024-12-24T17:54:45 IST" name="WebScraping Tests-0" finished-at="2024-12-24T17:55:39 IST" duration-ms="54486">
+    <test started-at="2024-12-25T17:13:45 IST" name="WebScraping Tests-5" finished-at="2024-12-25T17:14:03 IST" duration-ms="17391">
       <class name="WebScrapingTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:WebScrapingTest@6050462a]" started-at="2024-12-24T17:54:45 IST" name="setup" finished-at="2024-12-24T17:55:00 IST" duration-ms="15106" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:WebScrapingTest@15923407]" started-at="2024-12-25T17:13:45 IST" name="setup" finished-at="2024-12-25T17:14:02 IST" duration-ms="17116" status="FAIL">
+          <exception class="org.openqa.selenium.UnsupportedCommandException">
+            <message>
+              <![CDATA[unsupported operation: Unable to maximize window on Android platform
+  (Session info: chrome=128.0.6613.146)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e7951530d8f68ec1a36a65eb2cb8c86aeb3ee7cf, maximizeCurrentWindow {}]
+Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: chrome, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18082, databaseEnabled: false, desired: {browserName: chrome, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18082, deviceName: android, goog:chromeOptions: {args: [--disable-extensions, --remote-allow-origins=*, --proxy-bypass-list=<-loopb..., test-type, --proxy-server=http://185.2..., --disable-features=Translate]}, newCommandTimeout: 0, platformName: Android, skipServerInstallation: true, systemPort: 8202, udid: RZCW127QX4T}, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-S918B, deviceName: RZCW127QX4T, deviceScreenDensity: 450, deviceScreenSize: 1080x2316, deviceUDID: RZCW127QX4T, goog:chromeOptions: {args: [--disable-extensions, --remote-allow-origins=*, --proxy-bypass-list=<-loopb..., test-type, --proxy-server=http://185.2..., --disable-features=Translate]}, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 0, optimalHubUrl: hub-aps.browserstack.com, pixelRatio: 2.8125, platform: LINUX, platformName: ANDROID, platformVersion: 13, skipServerInstallation: true, statBarHeight: 75, systemPort: 8202, takesScreenshot: true, udid: RZCW127QX4T, viewportRect: {height: 2031, left: 0, top: 75, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: e7951530d8f68ec1a36a65eb2cb8c86aeb3ee7cf]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnsupportedCommandException: unsupported operation: Unable to maximize window on Android platform
+  (Session info: chrome=128.0.6613.146)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e7951530d8f68ec1a36a65eb2cb8c86aeb3ee7cf, maximizeCurrentWindow {}]
+Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: chrome, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18082, databaseEnabled: false, desired: {browserName: chrome, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18082, deviceName: android, goog:chromeOptions: {args: [--disable-extensions, --remote-allow-origins=*, --proxy-bypass-list=<-loopb..., test-type, --proxy-server=http://185.2..., --disable-features=Translate]}, newCommandTimeout: 0, platformName: Android, skipServerInstallation: true, systemPort: 8202, udid: RZCW127QX4T}, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-S918B, deviceName: RZCW127QX4T, deviceScreenDensity: 450, deviceScreenSize: 1080x2316, deviceUDID: RZCW127QX4T, goog:chromeOptions: {args: [--disable-extensions, --remote-allow-origins=*, --proxy-bypass-list=<-loopb..., test-type, --proxy-server=http://185.2..., --disable-features=Translate]}, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 0, optimalHubUrl: hub-aps.browserstack.com, pixelRatio: 2.8125, platform: LINUX, platformName: ANDROID, platformVersion: 13, skipServerInstallation: true, statBarHeight: 75, systemPort: 8202, takesScreenshot: true, udid: RZCW127QX4T, viewportRect: {height: 2031, left: 0, top: 75, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: e7951530d8f68ec1a36a65eb2cb8c86aeb3ee7cf
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1061)
+at WebScrapingTest.setup(WebScrapingTest.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnsupportedCommandException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="navigateToWebsite()[pri:1, instance:WebScrapingTest@6050462a]" started-at="2024-12-24T17:55:00 IST" name="navigateToWebsite" description="Visit the website El País, a Spanish news outlet." finished-at="2024-12-24T17:55:01 IST" duration-ms="1070" status="PASS">
+        <test-method signature="navigateToWebsite()[pri:1, instance:WebScrapingTest@15923407]" started-at="2024-12-25T17:14:02 IST" name="navigateToWebsite" description="Visit the website El País, a Spanish news outlet." finished-at="2024-12-25T17:14:02 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.UnsupportedCommandException">
+            <message>
+              <![CDATA[unsupported operation: Unable to maximize window on Android platform
+  (Session info: chrome=128.0.6613.146)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e7951530d8f68ec1a36a65eb2cb8c86aeb3ee7cf, maximizeCurrentWindow {}]
+Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: chrome, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18082, databaseEnabled: false, desired: {browserName: chrome, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18082, deviceName: android, goog:chromeOptions: {args: [--disable-extensions, --remote-allow-origins=*, --proxy-bypass-list=<-loopb..., test-type, --proxy-server=http://185.2..., --disable-features=Translate]}, newCommandTimeout: 0, platformName: Android, skipServerInstallation: true, systemPort: 8202, udid: RZCW127QX4T}, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-S918B, deviceName: RZCW127QX4T, deviceScreenDensity: 450, deviceScreenSize: 1080x2316, deviceUDID: RZCW127QX4T, goog:chromeOptions: {args: [--disable-extensions, --remote-allow-origins=*, --proxy-bypass-list=<-loopb..., test-type, --proxy-server=http://185.2..., --disable-features=Translate]}, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 0, optimalHubUrl: hub-aps.browserstack.com, pixelRatio: 2.8125, platform: LINUX, platformName: ANDROID, platformVersion: 13, skipServerInstallation: true, statBarHeight: 75, systemPort: 8202, takesScreenshot: true, udid: RZCW127QX4T, viewportRect: {height: 2031, left: 0, top: 75, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: e7951530d8f68ec1a36a65eb2cb8c86aeb3ee7cf]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnsupportedCommandException: unsupported operation: Unable to maximize window on Android platform
+  (Session info: chrome=128.0.6613.146)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e7951530d8f68ec1a36a65eb2cb8c86aeb3ee7cf, maximizeCurrentWindow {}]
+Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: chrome, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18082, databaseEnabled: false, desired: {browserName: chrome, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18082, deviceName: android, goog:chromeOptions: {args: [--disable-extensions, --remote-allow-origins=*, --proxy-bypass-list=<-loopb..., test-type, --proxy-server=http://185.2..., --disable-features=Translate]}, newCommandTimeout: 0, platformName: Android, skipServerInstallation: true, systemPort: 8202, udid: RZCW127QX4T}, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-S918B, deviceName: RZCW127QX4T, deviceScreenDensity: 450, deviceScreenSize: 1080x2316, deviceUDID: RZCW127QX4T, goog:chromeOptions: {args: [--disable-extensions, --remote-allow-origins=*, --proxy-bypass-list=<-loopb..., test-type, --proxy-server=http://185.2..., --disable-features=Translate]}, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 0, optimalHubUrl: hub-aps.browserstack.com, pixelRatio: 2.8125, platform: LINUX, platformName: ANDROID, platformVersion: 13, skipServerInstallation: true, statBarHeight: 75, systemPort: 8202, takesScreenshot: true, udid: RZCW127QX4T, viewportRect: {height: 2031, left: 0, top: 75, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: e7951530d8f68ec1a36a65eb2cb8c86aeb3ee7cf
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1061)
+at WebScrapingTest.setup(WebScrapingTest.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnsupportedCommandException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToWebsite -->
-        <test-method signature="verifyLanguage()[pri:2, instance:WebScrapingTest@6050462a]" started-at="2024-12-24T17:55:01 IST" name="verifyLanguage" description="Ensure that the website&#039;s text is displayed in Spanish." finished-at="2024-12-24T17:55:03 IST" depends-on-methods="WebScrapingTest.navigateToWebsite" duration-ms="2242" status="PASS">
+        <test-method signature="verifyLanguage()[pri:2, instance:WebScrapingTest@15923407]" started-at="2024-12-25T17:14:03 IST" name="verifyLanguage" description="Ensure that the website&#039;s text is displayed in Spanish." finished-at="2024-12-25T17:14:03 IST" depends-on-methods="WebScrapingTest.navigateToWebsite" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method WebScrapingTest.verifyLanguage() on instance WebScrapingTest@15923407 depends on not successfully finished methods 
+[WebScrapingTest.navigateToWebsite() on instance WebScrapingTest@15923407]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method WebScrapingTest.verifyLanguage() on instance WebScrapingTest@15923407 depends on not successfully finished methods 
+[WebScrapingTest.navigateToWebsite() on instance WebScrapingTest@15923407]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLanguage -->
-        <test-method signature="scrapeArticles()[pri:3, instance:WebScrapingTest@6050462a]" started-at="2024-12-24T17:55:04 IST" name="scrapeArticles" description="Scrape Articles from the Opinion Section" finished-at="2024-12-24T17:55:34 IST" depends-on-methods="WebScrapingTest.verifyLanguage" duration-ms="30241" status="PASS">
+        <test-method signature="scrapeArticles()[pri:3, instance:WebScrapingTest@15923407]" started-at="2024-12-25T17:14:03 IST" name="scrapeArticles" description="Scrape Articles from the Opinion Section" finished-at="2024-12-25T17:14:03 IST" depends-on-methods="WebScrapingTest.verifyLanguage" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method WebScrapingTest.scrapeArticles() on instance WebScrapingTest@15923407 depends on not successfully finished methods 
+[WebScrapingTest.verifyLanguage() on instance WebScrapingTest@15923407]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method WebScrapingTest.scrapeArticles() on instance WebScrapingTest@15923407 depends on not successfully finished methods 
+[WebScrapingTest.verifyLanguage() on instance WebScrapingTest@15923407]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scrapeArticles -->
-        <test-method signature="translateArticleHeaders()[pri:4, instance:WebScrapingTest@6050462a]" started-at="2024-12-24T17:55:34 IST" name="translateArticleHeaders" description="Translate Article Headers" finished-at="2024-12-24T17:55:37 IST" depends-on-methods="WebScrapingTest.scrapeArticles" duration-ms="2913" status="PASS">
+        <test-method signature="translateArticleHeaders()[pri:4, instance:WebScrapingTest@15923407]" started-at="2024-12-25T17:14:03 IST" name="translateArticleHeaders" description="Translate Article Headers" finished-at="2024-12-25T17:14:03 IST" depends-on-methods="WebScrapingTest.scrapeArticles" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method WebScrapingTest.translateArticleHeaders() on instance WebScrapingTest@15923407 depends on not successfully finished methods 
+[WebScrapingTest.scrapeArticles() on instance WebScrapingTest@15923407]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method WebScrapingTest.translateArticleHeaders() on instance WebScrapingTest@15923407 depends on not successfully finished methods 
+[WebScrapingTest.scrapeArticles() on instance WebScrapingTest@15923407]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- translateArticleHeaders -->
-        <test-method signature="analyseTranslatedHeaders()[pri:5, instance:WebScrapingTest@6050462a]" started-at="2024-12-24T17:55:37 IST" name="analyseTranslatedHeaders" description="Analyze Translated Headers" finished-at="2024-12-24T17:55:37 IST" depends-on-methods="WebScrapingTest.translateArticleHeaders" duration-ms="21" status="PASS">
+        <test-method signature="analyseTranslatedHeaders()[pri:5, instance:WebScrapingTest@15923407]" started-at="2024-12-25T17:14:03 IST" name="analyseTranslatedHeaders" description="Analyze Translated Headers" finished-at="2024-12-25T17:14:03 IST" depends-on-methods="WebScrapingTest.translateArticleHeaders" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method WebScrapingTest.analyseTranslatedHeaders() on instance WebScrapingTest@15923407 depends on not successfully finished methods 
+[WebScrapingTest.translateArticleHeaders() on instance WebScrapingTest@15923407]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method WebScrapingTest.analyseTranslatedHeaders() on instance WebScrapingTest@15923407 depends on not successfully finished methods 
+[WebScrapingTest.translateArticleHeaders() on instance WebScrapingTest@15923407]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- analyseTranslatedHeaders -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:WebScrapingTest@6050462a]" started-at="2024-12-24T17:55:37 IST" name="closeBrowser" finished-at="2024-12-24T17:55:39 IST" duration-ms="2254" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:WebScrapingTest@15923407]" started-at="2024-12-25T17:14:03 IST" name="closeBrowser" finished-at="2024-12-25T17:14:03 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- WebScrapingTest -->
+    </test> <!-- WebScraping Tests-5 -->
+    <test started-at="2024-12-25T17:13:45 IST" name="WebScraping Tests-4" finished-at="2024-12-25T17:14:39 IST" duration-ms="53295">
+      <class name="WebScrapingTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:WebScrapingTest@4c27d39d]" started-at="2024-12-25T17:13:45 IST" name="setup" finished-at="2024-12-25T17:14:11 IST" duration-ms="25469" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="navigateToWebsite()[pri:1, instance:WebScrapingTest@4c27d39d]" started-at="2024-12-25T17:14:11 IST" name="navigateToWebsite" description="Visit the website El País, a Spanish news outlet." finished-at="2024-12-25T17:14:22 IST" duration-ms="11285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToWebsite -->
+        <test-method signature="verifyLanguage()[pri:2, instance:WebScrapingTest@4c27d39d]" started-at="2024-12-25T17:14:22 IST" name="verifyLanguage" description="Ensure that the website&#039;s text is displayed in Spanish." finished-at="2024-12-25T17:14:23 IST" depends-on-methods="WebScrapingTest.navigateToWebsite" duration-ms="607" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLanguage -->
+        <test-method signature="scrapeArticles()[pri:3, instance:WebScrapingTest@4c27d39d]" started-at="2024-12-25T17:14:23 IST" name="scrapeArticles" description="Scrape Articles from the Opinion Section" finished-at="2024-12-25T17:14:34 IST" depends-on-methods="WebScrapingTest.verifyLanguage" duration-ms="11005" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scrapeArticles -->
+        <test-method signature="translateArticleHeaders()[pri:4, instance:WebScrapingTest@4c27d39d]" started-at="2024-12-25T17:14:34 IST" name="translateArticleHeaders" description="Translate Article Headers" finished-at="2024-12-25T17:14:37 IST" depends-on-methods="WebScrapingTest.scrapeArticles" duration-ms="2770" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- translateArticleHeaders -->
+        <test-method signature="analyseTranslatedHeaders()[pri:5, instance:WebScrapingTest@4c27d39d]" started-at="2024-12-25T17:14:37 IST" name="analyseTranslatedHeaders" description="Analyze Translated Headers" finished-at="2024-12-25T17:14:37 IST" depends-on-methods="WebScrapingTest.translateArticleHeaders" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- analyseTranslatedHeaders -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:WebScrapingTest@4c27d39d]" started-at="2024-12-25T17:14:37 IST" name="closeBrowser" finished-at="2024-12-25T17:14:39 IST" duration-ms="1823" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- WebScrapingTest -->
+    </test> <!-- WebScraping Tests-4 -->
+    <test started-at="2024-12-25T17:13:45 IST" name="WebScraping Tests-0" finished-at="2024-12-25T17:14:43 IST" duration-ms="58174">
+      <class name="WebScrapingTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:WebScrapingTest@42c2f48c]" started-at="2024-12-25T17:13:45 IST" name="setup" finished-at="2024-12-25T17:14:02 IST" duration-ms="16599" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="navigateToWebsite()[pri:1, instance:WebScrapingTest@42c2f48c]" started-at="2024-12-25T17:14:02 IST" name="navigateToWebsite" description="Visit the website El País, a Spanish news outlet." finished-at="2024-12-25T17:14:43 IST" duration-ms="41277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToWebsite -->
+        <test-method signature="verifyLanguage()[pri:2, instance:WebScrapingTest@42c2f48c]" started-at="2024-12-25T17:14:43 IST" name="verifyLanguage" description="Ensure that the website&#039;s text is displayed in Spanish." finished-at="2024-12-25T17:14:43 IST" depends-on-methods="WebScrapingTest.navigateToWebsite" duration-ms="22" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {value=//button[@id='btn_open_hamburger'], using=xpath}]
+Capabilities {automationName: XCUITest, bootstrapPath: /usr/local/.browserstack/co..., browserName: safari, browserVersion: null, browserstack.isTargetBased: true, databaseEnabled: false, deviceName: iPhone 15, deviceOrientation: PORTRAIT, javascriptEnabled: true, keychainPassword: [REDACTED VALUE], keychainPath: [REDACTED VALUE], locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 0, noReset: true, optimalHubUrl: hub-aps.browserstack.com, orientation: PORTRAIT, platform: MAC, platformName: IOS, realMobile: true, safariIgnoreFraudWarning: true, takesScreenshot: true, udid: 00008120-00122D2826C2201E, useXctestrunFile: true, webStorageEnabled: false}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {value=//button[@id='btn_open_hamburger'], using=xpath}]
+Capabilities {automationName: XCUITest, bootstrapPath: /usr/local/.browserstack/co..., browserName: safari, browserVersion: null, browserstack.isTargetBased: true, databaseEnabled: false, deviceName: iPhone 15, deviceOrientation: PORTRAIT, javascriptEnabled: true, keychainPassword: [REDACTED VALUE], keychainPath: [REDACTED VALUE], locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 0, noReset: true, optimalHubUrl: hub-aps.browserstack.com, orientation: PORTRAIT, platform: MAC, platformName: IOS, realMobile: true, safariIgnoreFraudWarning: true, takesScreenshot: true, udid: 00008120-00122D2826C2201E, useXctestrunFile: true, webStorageEnabled: false}
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:151)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at WebScrapingTest.verifyLanguage(WebScrapingTest.java:111)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLanguage -->
+        <test-method signature="scrapeArticles()[pri:3, instance:WebScrapingTest@42c2f48c]" started-at="2024-12-25T17:14:43 IST" name="scrapeArticles" description="Scrape Articles from the Opinion Section" finished-at="2024-12-25T17:14:43 IST" depends-on-methods="WebScrapingTest.verifyLanguage" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method WebScrapingTest.scrapeArticles() on instance WebScrapingTest@42c2f48c depends on not successfully finished methods 
+[WebScrapingTest.verifyLanguage() on instance WebScrapingTest@42c2f48c]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method WebScrapingTest.scrapeArticles() on instance WebScrapingTest@42c2f48c depends on not successfully finished methods 
+[WebScrapingTest.verifyLanguage() on instance WebScrapingTest@42c2f48c]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scrapeArticles -->
+        <test-method signature="translateArticleHeaders()[pri:4, instance:WebScrapingTest@42c2f48c]" started-at="2024-12-25T17:14:43 IST" name="translateArticleHeaders" description="Translate Article Headers" finished-at="2024-12-25T17:14:43 IST" depends-on-methods="WebScrapingTest.scrapeArticles" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method WebScrapingTest.translateArticleHeaders() on instance WebScrapingTest@42c2f48c depends on not successfully finished methods 
+[WebScrapingTest.scrapeArticles() on instance WebScrapingTest@42c2f48c]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method WebScrapingTest.translateArticleHeaders() on instance WebScrapingTest@42c2f48c depends on not successfully finished methods 
+[WebScrapingTest.scrapeArticles() on instance WebScrapingTest@42c2f48c]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- translateArticleHeaders -->
+        <test-method signature="analyseTranslatedHeaders()[pri:5, instance:WebScrapingTest@42c2f48c]" started-at="2024-12-25T17:14:43 IST" name="analyseTranslatedHeaders" description="Analyze Translated Headers" finished-at="2024-12-25T17:14:43 IST" depends-on-methods="WebScrapingTest.translateArticleHeaders" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method WebScrapingTest.analyseTranslatedHeaders() on instance WebScrapingTest@42c2f48c depends on not successfully finished methods 
+[WebScrapingTest.translateArticleHeaders() on instance WebScrapingTest@42c2f48c]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method WebScrapingTest.analyseTranslatedHeaders() on instance WebScrapingTest@42c2f48c depends on not successfully finished methods 
+[WebScrapingTest.translateArticleHeaders() on instance WebScrapingTest@42c2f48c]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- analyseTranslatedHeaders -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:WebScrapingTest@42c2f48c]" started-at="2024-12-25T17:14:43 IST" name="closeBrowser" finished-at="2024-12-25T17:14:43 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- WebScrapingTest -->
     </test> <!-- WebScraping Tests-0 -->
+    <test started-at="2024-12-25T17:13:45 IST" name="WebScraping Tests-1" finished-at="2024-12-25T17:14:45 IST" duration-ms="59577">
+      <class name="WebScrapingTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:WebScrapingTest@6c37bd27]" started-at="2024-12-25T17:13:45 IST" name="setup" finished-at="2024-12-25T17:14:04 IST" duration-ms="18596" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="navigateToWebsite()[pri:1, instance:WebScrapingTest@6c37bd27]" started-at="2024-12-25T17:14:04 IST" name="navigateToWebsite" description="Visit the website El País, a Spanish news outlet." finished-at="2024-12-25T17:14:45 IST" duration-ms="40702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToWebsite -->
+        <test-method signature="verifyLanguage()[pri:2, instance:WebScrapingTest@6c37bd27]" started-at="2024-12-25T17:14:45 IST" name="verifyLanguage" description="Ensure that the website&#039;s text is displayed in Spanish." finished-at="2024-12-25T17:14:45 IST" depends-on-methods="WebScrapingTest.navigateToWebsite" duration-ms="23" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {value=//button[@id='btn_open_hamburger'], using=xpath}]
+Capabilities {automationName: XCUITest, bootstrapPath: /usr/local/.browserstack/co..., browserName: safari, browserVersion: null, browserstack.isTargetBased: true, databaseEnabled: false, deviceName: iPhone 15, deviceOrientation: PORTRAIT, javascriptEnabled: true, keychainPassword: [REDACTED VALUE], keychainPath: [REDACTED VALUE], locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 0, noReset: true, optimalHubUrl: hub-aps.browserstack.com, orientation: PORTRAIT, platform: MAC, platformName: IOS, realMobile: true, safariIgnoreFraudWarning: true, takesScreenshot: true, udid: 00008120-00122D2826C2201E, useXctestrunFile: true, webStorageEnabled: false}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {value=//button[@id='btn_open_hamburger'], using=xpath}]
+Capabilities {automationName: XCUITest, bootstrapPath: /usr/local/.browserstack/co..., browserName: safari, browserVersion: null, browserstack.isTargetBased: true, databaseEnabled: false, deviceName: iPhone 15, deviceOrientation: PORTRAIT, javascriptEnabled: true, keychainPassword: [REDACTED VALUE], keychainPath: [REDACTED VALUE], locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 0, noReset: true, optimalHubUrl: hub-aps.browserstack.com, orientation: PORTRAIT, platform: MAC, platformName: IOS, realMobile: true, safariIgnoreFraudWarning: true, takesScreenshot: true, udid: 00008120-00122D2826C2201E, useXctestrunFile: true, webStorageEnabled: false}
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:151)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at WebScrapingTest.verifyLanguage(WebScrapingTest.java:111)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLanguage -->
+        <test-method signature="scrapeArticles()[pri:3, instance:WebScrapingTest@6c37bd27]" started-at="2024-12-25T17:14:45 IST" name="scrapeArticles" description="Scrape Articles from the Opinion Section" finished-at="2024-12-25T17:14:45 IST" depends-on-methods="WebScrapingTest.verifyLanguage" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method WebScrapingTest.scrapeArticles() on instance WebScrapingTest@6c37bd27 depends on not successfully finished methods 
+[WebScrapingTest.verifyLanguage() on instance WebScrapingTest@6c37bd27]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method WebScrapingTest.scrapeArticles() on instance WebScrapingTest@6c37bd27 depends on not successfully finished methods 
+[WebScrapingTest.verifyLanguage() on instance WebScrapingTest@6c37bd27]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scrapeArticles -->
+        <test-method signature="translateArticleHeaders()[pri:4, instance:WebScrapingTest@6c37bd27]" started-at="2024-12-25T17:14:45 IST" name="translateArticleHeaders" description="Translate Article Headers" finished-at="2024-12-25T17:14:45 IST" depends-on-methods="WebScrapingTest.scrapeArticles" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method WebScrapingTest.translateArticleHeaders() on instance WebScrapingTest@6c37bd27 depends on not successfully finished methods 
+[WebScrapingTest.scrapeArticles() on instance WebScrapingTest@6c37bd27]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method WebScrapingTest.translateArticleHeaders() on instance WebScrapingTest@6c37bd27 depends on not successfully finished methods 
+[WebScrapingTest.scrapeArticles() on instance WebScrapingTest@6c37bd27]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- translateArticleHeaders -->
+        <test-method signature="analyseTranslatedHeaders()[pri:5, instance:WebScrapingTest@6c37bd27]" started-at="2024-12-25T17:14:45 IST" name="analyseTranslatedHeaders" description="Analyze Translated Headers" finished-at="2024-12-25T17:14:45 IST" depends-on-methods="WebScrapingTest.translateArticleHeaders" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method WebScrapingTest.analyseTranslatedHeaders() on instance WebScrapingTest@6c37bd27 depends on not successfully finished methods 
+[WebScrapingTest.translateArticleHeaders() on instance WebScrapingTest@6c37bd27]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method WebScrapingTest.analyseTranslatedHeaders() on instance WebScrapingTest@6c37bd27 depends on not successfully finished methods 
+[WebScrapingTest.translateArticleHeaders() on instance WebScrapingTest@6c37bd27]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- analyseTranslatedHeaders -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:WebScrapingTest@6c37bd27]" started-at="2024-12-25T17:14:45 IST" name="closeBrowser" finished-at="2024-12-25T17:14:45 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- WebScrapingTest -->
+    </test> <!-- WebScraping Tests-1 -->
+    <test started-at="2024-12-25T17:13:45 IST" name="WebScraping Tests-3" finished-at="2024-12-25T17:14:52 IST" duration-ms="67101">
+      <class name="WebScrapingTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:WebScrapingTest@4fe875be]" started-at="2024-12-25T17:13:45 IST" name="setup" finished-at="2024-12-25T17:14:04 IST" duration-ms="18374" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="navigateToWebsite()[pri:1, instance:WebScrapingTest@4fe875be]" started-at="2024-12-25T17:14:04 IST" name="navigateToWebsite" description="Visit the website El País, a Spanish news outlet." finished-at="2024-12-25T17:14:52 IST" duration-ms="48463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToWebsite -->
+        <test-method signature="verifyLanguage()[pri:2, instance:WebScrapingTest@4fe875be]" started-at="2024-12-25T17:14:52 IST" name="verifyLanguage" description="Ensure that the website&#039;s text is displayed in Spanish." finished-at="2024-12-25T17:14:52 IST" depends-on-methods="WebScrapingTest.navigateToWebsite" duration-ms="21" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {value=//button[@id='btn_open_hamburger'], using=xpath}]
+Capabilities {automationName: XCUITest, bootstrapPath: /usr/local/.browserstack/co..., browserName: safari, browserVersion: null, browserstack.isTargetBased: true, databaseEnabled: false, deviceName: iPhone 15, deviceOrientation: PORTRAIT, javascriptEnabled: true, keychainPassword: [REDACTED VALUE], keychainPath: [REDACTED VALUE], locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 0, noReset: true, optimalHubUrl: hub-aps.browserstack.com, orientation: PORTRAIT, platform: MAC, platformName: IOS, realMobile: true, safariIgnoreFraudWarning: true, takesScreenshot: true, udid: 00008120-00122D2826C2201E, useXctestrunFile: true, webStorageEnabled: false}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {value=//button[@id='btn_open_hamburger'], using=xpath}]
+Capabilities {automationName: XCUITest, bootstrapPath: /usr/local/.browserstack/co..., browserName: safari, browserVersion: null, browserstack.isTargetBased: true, databaseEnabled: false, deviceName: iPhone 15, deviceOrientation: PORTRAIT, javascriptEnabled: true, keychainPassword: [REDACTED VALUE], keychainPath: [REDACTED VALUE], locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 0, noReset: true, optimalHubUrl: hub-aps.browserstack.com, orientation: PORTRAIT, platform: MAC, platformName: IOS, realMobile: true, safariIgnoreFraudWarning: true, takesScreenshot: true, udid: 00008120-00122D2826C2201E, useXctestrunFile: true, webStorageEnabled: false}
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:151)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at WebScrapingTest.verifyLanguage(WebScrapingTest.java:111)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLanguage -->
+        <test-method signature="scrapeArticles()[pri:3, instance:WebScrapingTest@4fe875be]" started-at="2024-12-25T17:14:52 IST" name="scrapeArticles" description="Scrape Articles from the Opinion Section" finished-at="2024-12-25T17:14:52 IST" depends-on-methods="WebScrapingTest.verifyLanguage" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method WebScrapingTest.scrapeArticles() on instance WebScrapingTest@4fe875be depends on not successfully finished methods 
+[WebScrapingTest.verifyLanguage() on instance WebScrapingTest@4fe875be]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method WebScrapingTest.scrapeArticles() on instance WebScrapingTest@4fe875be depends on not successfully finished methods 
+[WebScrapingTest.verifyLanguage() on instance WebScrapingTest@4fe875be]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scrapeArticles -->
+        <test-method signature="translateArticleHeaders()[pri:4, instance:WebScrapingTest@4fe875be]" started-at="2024-12-25T17:14:52 IST" name="translateArticleHeaders" description="Translate Article Headers" finished-at="2024-12-25T17:14:52 IST" depends-on-methods="WebScrapingTest.scrapeArticles" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method WebScrapingTest.translateArticleHeaders() on instance WebScrapingTest@4fe875be depends on not successfully finished methods 
+[WebScrapingTest.scrapeArticles() on instance WebScrapingTest@4fe875be]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method WebScrapingTest.translateArticleHeaders() on instance WebScrapingTest@4fe875be depends on not successfully finished methods 
+[WebScrapingTest.scrapeArticles() on instance WebScrapingTest@4fe875be]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- translateArticleHeaders -->
+        <test-method signature="analyseTranslatedHeaders()[pri:5, instance:WebScrapingTest@4fe875be]" started-at="2024-12-25T17:14:52 IST" name="analyseTranslatedHeaders" description="Analyze Translated Headers" finished-at="2024-12-25T17:14:52 IST" depends-on-methods="WebScrapingTest.translateArticleHeaders" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method WebScrapingTest.analyseTranslatedHeaders() on instance WebScrapingTest@4fe875be depends on not successfully finished methods 
+[WebScrapingTest.translateArticleHeaders() on instance WebScrapingTest@4fe875be]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method WebScrapingTest.analyseTranslatedHeaders() on instance WebScrapingTest@4fe875be depends on not successfully finished methods 
+[WebScrapingTest.translateArticleHeaders() on instance WebScrapingTest@4fe875be]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- analyseTranslatedHeaders -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:WebScrapingTest@4fe875be]" started-at="2024-12-25T17:14:52 IST" name="closeBrowser" finished-at="2024-12-25T17:14:52 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- WebScrapingTest -->
+    </test> <!-- WebScraping Tests-3 -->
+    <test started-at="2024-12-25T17:13:45 IST" name="WebScraping Tests-2" finished-at="2024-12-25T17:16:05 IST" duration-ms="139436">
+      <class name="WebScrapingTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:WebScrapingTest@30331109]" started-at="2024-12-25T17:13:45 IST" name="setup" finished-at="2024-12-25T17:15:06 IST" duration-ms="80975" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="navigateToWebsite()[pri:1, instance:WebScrapingTest@30331109]" started-at="2024-12-25T17:15:06 IST" name="navigateToWebsite" description="Visit the website El País, a Spanish news outlet." finished-at="2024-12-25T17:15:47 IST" duration-ms="41108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToWebsite -->
+        <test-method signature="verifyLanguage()[pri:2, instance:WebScrapingTest@30331109]" started-at="2024-12-25T17:15:47 IST" name="verifyLanguage" description="Ensure that the website&#039;s text is displayed in Spanish." finished-at="2024-12-25T17:15:48 IST" depends-on-methods="WebScrapingTest.navigateToWebsite" duration-ms="773" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLanguage -->
+        <test-method signature="scrapeArticles()[pri:3, instance:WebScrapingTest@30331109]" started-at="2024-12-25T17:15:48 IST" name="scrapeArticles" description="Scrape Articles from the Opinion Section" finished-at="2024-12-25T17:16:00 IST" depends-on-methods="WebScrapingTest.verifyLanguage" duration-ms="11389" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scrapeArticles -->
+        <test-method signature="translateArticleHeaders()[pri:4, instance:WebScrapingTest@30331109]" started-at="2024-12-25T17:16:00 IST" name="translateArticleHeaders" description="Translate Article Headers" finished-at="2024-12-25T17:16:02 IST" depends-on-methods="WebScrapingTest.scrapeArticles" duration-ms="2469" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- translateArticleHeaders -->
+        <test-method signature="analyseTranslatedHeaders()[pri:5, instance:WebScrapingTest@30331109]" started-at="2024-12-25T17:16:02 IST" name="analyseTranslatedHeaders" description="Analyze Translated Headers" finished-at="2024-12-25T17:16:02 IST" depends-on-methods="WebScrapingTest.translateArticleHeaders" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- analyseTranslatedHeaders -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:WebScrapingTest@30331109]" started-at="2024-12-25T17:16:02 IST" name="closeBrowser" finished-at="2024-12-25T17:16:05 IST" duration-ms="2389" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- WebScrapingTest -->
+    </test> <!-- WebScraping Tests-2 -->
   </suite> <!-- WebScraping Suite -->
 </testng-results>
