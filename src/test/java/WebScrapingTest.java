@@ -82,30 +82,6 @@ public class WebScrapingTest extends DriverManagerUtil {
     public void verifyLanguage(){
         WebElement languageEle = null;
 
-//        List<WebElement> hamburgerMenu = driver.findElements(By.xpath("//button[@id='btn_open_hamburger']"));
-//        List<WebElement> noticeLocator1 = driver.findElements(By.xpath("//div[contains(@data-dtm-region, 'header_hamburguesa_edicion')] //ul/li/a[@href='https://elpais.com']"));
-//        List<WebElement> noticeLocator2 = driver.findElements(By.xpath("//time[contains(@id, 'header')]/parent::div/div //ul/li[1] //span"));
-//
-//        if (!hamburgerMenu.isEmpty() && hamburgerMenu.get(0).isDisplayed() && hamburgerMenu.get(0).isEnabled()){
-//            wait.until(ExpectedConditions.elementToBeClickable(hamburgerMenu.get(0)));
-//            hamburgerMenu.get(0).click();
-//            try {
-//                if (!noticeLocator1.isEmpty() && noticeLocator1.get(0).isDisplayed() && noticeLocator1.get(0).isEnabled()){
-//                    languageEle = noticeLocator1.get(0);
-//                }
-//            } catch (NoSuchElementException nse) {
-//                System.out.println(nse.getMessage());
-//            }
-//        } else {
-//            try {
-//                if (!noticeLocator2.isEmpty() && noticeLocator2.get(0).isDisplayed() && noticeLocator2.get(0).isEnabled()) {
-//                    languageEle = noticeLocator2.get(0);
-//                }
-//            } catch (NoSuchElementException nse1) {
-//                System.out.println(nse1.getMessage());
-//            }
-//        }
-
             // Click on Hamburger menu and proceed with validations
 
             WebElement hamburgerMenu = driver.findElement(By.xpath("//button[@id='btn_open_hamburger']"));
