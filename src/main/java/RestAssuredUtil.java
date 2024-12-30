@@ -18,6 +18,7 @@ import static io.restassured.RestAssured.given;
 
 public class RestAssuredUtil {
     Properties properties;
+    public static String apiKey;
 
     public String translateApi(String input){
         try {
@@ -34,7 +35,8 @@ public class RestAssuredUtil {
         // API Headers
         Map<String, String> headers = new HashMap<>();
         headers.put("Content-Type", properties.getProperty("contentType"));
-        headers.put("X-RapidAPI-Key", properties.getProperty("apiKey"));
+        apiKey = System.getenv("TRANSLATION_API_URL");
+        headers.put("X-RapidAPI-Key", apiKey);
         headers.put("X-RapidAPI-Host", properties.getProperty("apiHost"));
 
         // API Body

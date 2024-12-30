@@ -19,7 +19,7 @@ public class DriverManagerUtil {
     public static WebDriverWait wait;
     public static Properties properties;
 
-    public static WebDriver driverInitialization(String browserName, String platform){
+    public static WebDriver driverInitialization(String browserName){
         String propertyDir = System.getProperty("user.dir") + File.separator + "Browser.properties";
         try {
             properties = new Properties();
@@ -35,18 +35,10 @@ public class DriverManagerUtil {
                         System.getProperty("user.dir") + File.separator + "Drivers" + File.separator + "chromedriver");
 
                 ChromeOptions options = new ChromeOptions();
-
-                if (platform.equalsIgnoreCase("mWEB")){
-                    MWebUtil mWebUtil = new MWebUtil();
-                    mWebUtil.DevTools(options);
-                    mWebUtil.BrowserStackConfig();
-                } else {
                     options.addArguments("--disable-extensions");
                     options.addArguments("--disable-gpu");
                     options.addArguments("--remote-allow-origins=*");
-                }
-
-                driver = new ChromeDriver(options);
+                    driver = new ChromeDriver(options);
                 System.out.println("*************************Chrome Browser Invoked!*************************");
                 break;
             case "Firefox":

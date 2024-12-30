@@ -17,13 +17,13 @@ public class WebScrapingTest extends DriverManagerUtil {
     RestAssuredUtil restAssuredUtil;
     List<String> headersToTranslate;
     List<String> translatedHeaders;
-    String url, browser = "Chrome", platform = "WEB";
+    String url, browser = "Chrome";
 
 
     @BeforeClass
     public void setup(){
         // Initialize Driver
-        driver = driverInitialization(browser, platform);    // BrowserName: For Local Execution
+        driver = driverInitialization(browser);    // BrowserName: For Local Execution
         url = properties.getProperty("URL");
         driver.navigate().to(url);
         driver.manage().window().maximize();
